@@ -68,7 +68,7 @@ public class NBATeamsStatsDemo extends Application{
         return new VBox(titleLabel,listOfCompareTeams);
     }
 
-    public VBox buildMatchesBox() throws Exception{
+    public VBox buildMatchesBox() {
         titleLabel = new Label("Forth, click the button and select a match");
         titleLabel.setFont(new Font(18));
         listOfMatches = controllerPane.matchesListComboBox();
@@ -78,3 +78,4 @@ public class NBATeamsStatsDemo extends Application{
     public static void main(String[] args) {
         launch(args); }
 }
+//

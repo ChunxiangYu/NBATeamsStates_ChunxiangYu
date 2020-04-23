@@ -9,15 +9,15 @@ public class TeamMatches {
         return TeamListParser.getNewListOfTeams().getTeamUrlName(teamId);
     }
 
-    public static List findMatch(List<Object> list1, List<Object> list2)throws Exception {
-        Collection exists=new ArrayList(list2);
-        Collection notExists=new ArrayList(list2);
+    public static List<Object> findMatch(List<Object> list1, List<Object> list2) {
+        ArrayList<Object> exists=new ArrayList<>(list2);
+        List<Object> notExists=new ArrayList<>(list2);
         exists.removeAll(list1);
         notExists.removeAll(exists);
 
-        return (List) notExists;
+        return notExists;
     }
-
+//
     public static String getGameData(String seasonYear, String compareTeamUrlName, String gameId) throws Exception{
         String gameData = (String) TeamStatsParser.parseRequest(URLCreator.getTeamSchedule(seasonYear, compareTeamUrlName)).addId(gameId).parseGameData();
         return gameData;

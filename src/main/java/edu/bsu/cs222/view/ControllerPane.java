@@ -34,8 +34,7 @@ public class ControllerPane extends VBox {
 
 
     public VBox yearListComboBox(){
-        VBox yearListBox = createYearListBox();
-        return  yearListBox;
+        return createYearListBox();
     }
     public VBox teamListComboBox() throws Exception {
         return createTeamListBox();
@@ -44,7 +43,7 @@ public class ControllerPane extends VBox {
         return createCompareTeamListBox();
     }
 
-    public VBox matchesListComboBox() throws Exception {
+    public VBox matchesListComboBox() {
         return createMatchesListBox();
     }
 
@@ -53,9 +52,7 @@ public class ControllerPane extends VBox {
         yearListBox.setItems(FXCollections.observableArrayList(
                 "2019", "2017","2016","2015")
         );
-        yearListBox.getSelectionModel().selectedItemProperty().addListener((ov, t, t1) ->  {
-            seasonYear = yearListBox.getValue();
-        });
+        yearListBox.getSelectionModel().selectedItemProperty().addListener((ov, t, t1) -> seasonYear = yearListBox.getValue());
         return new VBox(yearListBox);
     }
 
@@ -103,7 +100,7 @@ public class ControllerPane extends VBox {
                 "1","2","3","4")
         );
         getMatchList.setOnAction(actionEvent -> {
-            //matchDescription.clear();
+
             try {
                 matchDescription.setText("");
                 String matchGameId1 = (String) TeamMatches.findMatch(teamGameId,compareTeamGameId).get(0);
@@ -132,8 +129,8 @@ public class ControllerPane extends VBox {
                        // matchDescription.clear();
                         gameDescription = TeamStatsParser.parseRequest(URLCreator.getDescription(idData.get(gameData),gameData,t1)).addId(TeamStats.getTeamId(teamName)).parseGameDescriptionList();
                         String[] description = String.valueOf(gameDescription).split(",");
-                        for(int i=0;i<description.length;i++){
-                            matchDescription.appendText(description[i]+"\n");
+                        for (String s : description) {
+                            matchDescription.appendText(s + "\n");
                         }
                     } catch (Exception e) {
                         e.printStackTrace();
