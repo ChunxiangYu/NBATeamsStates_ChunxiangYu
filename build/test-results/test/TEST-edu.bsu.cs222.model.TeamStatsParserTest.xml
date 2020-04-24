@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.bsu.cs222.model.TeamStatsParserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-24T05:28:03" hostname="LAPTOP-MB96NKHH" time="0.409">
+  <properties/>
+  <testcase name="testParse()" classname="edu.bsu.cs222.model.TeamStatsParserTest" time="0.267"/>
+  <testcase name="testParseUrlName()" classname="edu.bsu.cs222.model.TeamStatsParserTest" time="0.057"/>
+  <testcase name="testParseGameIdList()" classname="edu.bsu.cs222.model.TeamStatsParserTest" time="0.057"/>
+  <testcase name="testParseGameData()" classname="edu.bsu.cs222.model.TeamStatsParserTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

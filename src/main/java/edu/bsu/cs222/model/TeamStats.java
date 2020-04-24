@@ -12,7 +12,6 @@ public class TeamStats {
         private float loss;
         private float confRank;
         private float divRank;
-        private float urlName;
         public TeamBuilder teamId(String id) {
             this.id = id;
             return this;
@@ -21,7 +20,7 @@ public class TeamStats {
             this.wins = wins;
             return this;
         }
-        //
+
         public TeamBuilder teamConfRank(float confRank) {
             this.confRank = confRank;
             return this;
@@ -34,24 +33,18 @@ public class TeamStats {
             this.loss = loss;
             return new TeamStats(this);
         }
-        public TeamStats teamUrlName(float urlName) {
-            this.urlName = urlName;
-            return new TeamStats(this);
-        }
     }
     private String id;
     private float wins;
     private float loss;
     private float confRank;
     private float divRank;
-    private float urlName;
     public TeamStats(TeamBuilder builder) {
         this.wins = builder.wins;
         this.id = builder.id;
         this.loss = builder.loss;
         this.confRank = builder.confRank;
         this.divRank = builder.divRank;
-        this.urlName = builder.urlName;
     }
 
     public static String getTeamId(String s) throws Exception {

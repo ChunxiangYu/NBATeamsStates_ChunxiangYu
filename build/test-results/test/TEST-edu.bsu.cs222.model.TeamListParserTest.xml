@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.bsu.cs222.model.TeamListParserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-24T05:28:03" hostname="LAPTOP-MB96NKHH" time="0.101">
+  <properties/>
+  <testcase name="testTeamIdRight()" classname="edu.bsu.cs222.model.TeamListParserTest" time="0.091"/>
+  <testcase name="testTeamListRight()" classname="edu.bsu.cs222.model.TeamListParserTest" time="0.007"/>
+  <testcase name="testReadJsonFile()" classname="edu.bsu.cs222.model.TeamListParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

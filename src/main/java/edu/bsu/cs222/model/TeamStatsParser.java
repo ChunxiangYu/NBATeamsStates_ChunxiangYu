@@ -10,7 +10,6 @@ public class TeamStatsParser {
     public static final class TeamParserBuilder {
         private InputStream in;
         private String id;
-        //private String gameId;
 
         public TeamParserBuilder(InputStream in)
         {
@@ -35,7 +34,6 @@ public class TeamStatsParser {
     {
         this.in = builder.in;
         this.id = builder.id;
-        //this.gameId = builder.gameId;
     }
 
     public TeamStats parse() {
@@ -46,9 +44,9 @@ public class TeamStatsParser {
         jsonArray.add(JsonPath.read(json, "$.league.standard.teams[?(@.teamId == '" + id + "')].confRank"));
         jsonArray.add(JsonPath.read(json, "$.league.standard.teams[?(@.teamId == '" + id + "')].divRank"));
         jsonArray.add(JsonPath.read(json, "$.league.standard.teams[?(@.teamId == '" + id + "')].streak"));
-
         return TeamStats.build().teamId(((JSONArray) jsonArray.get(0)).get(0).toString()).teamWins(getFloat(1)).teamConfRank(getFloat(3)).teamDivRank(getFloat(4)).teamLoss(getFloat(2));
     }
+
     public Object parseUrlName(){
         Object json = Configuration.defaultConfiguration().jsonProvider().parse(in, "UTF-8");
         List<Object> urlName = JsonPath.read(json, "$.league.standard[?(@.teamId == '" + id + "')].urlName");
@@ -69,7 +67,6 @@ public class TeamStatsParser {
         List<Object> teamList = JsonPath.read(json, "$.plays..formatted..description");
         return teamList;
     }
-    //
 
     private float getFloat(Integer index){
         return Float.parseFloat(((JSONArray) jsonArray.get(index)).get(0).toString());

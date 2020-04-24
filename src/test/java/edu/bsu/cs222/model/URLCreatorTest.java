@@ -4,12 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -30,17 +28,16 @@ public class URLCreatorTest {
         InputStream url = URLCreator.getTeamStats("2019");
         Assertions.assertNotNull(url);
     }
+
     @Test
-    public void testGetTeamStatsUrl() throws Exception {
-        InputStream teamStatsUrl = URLCreator.getTeamStats("2019");
-        InputStream teamListStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("standings_all.json");
-        byte[] bytes;
-        bytes = new byte[teamStatsUrl.available()];
-        System.out.println(bytes.length);
-        teamStatsUrl.read(bytes);
-        String str = new String(bytes);
-        System.out.println(str);
-        boolean b = str.equals(teamStatsUrl);
-        assertTrue(b);
+    public void testReadJsonFile() {
+        InputStream is = readJsonFile("NBATeamList.json");
+        String result = new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining(System.lineSeparator()));
+        System.out.println(result);
     }
+    public static InputStream readJsonFile(String filePath){
+        InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(filePath);
+        return is;
+    }
+
 }

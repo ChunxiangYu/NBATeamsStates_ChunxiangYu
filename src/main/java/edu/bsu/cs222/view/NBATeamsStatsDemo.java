@@ -5,13 +5,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class NBATeamsStatsDemo extends Application{
     ControllerPane controllerPane = new ControllerPane();
-    //TeamStatsView teamStatsView = new TeamStatsView();
     public Label titleLabel;
     public VBox listOfTeams;
     public VBox listOfCompareTeams;
@@ -78,4 +76,4 @@ public class NBATeamsStatsDemo extends Application{
     public static void main(String[] args) {
         launch(args); }
 }
-//
+

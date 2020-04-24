@@ -26,19 +26,21 @@ public class TeamListParser {
         }
         return teamList;
     }
+
+    public static List<String> getList() throws Exception {
+        TeamListParser teamListParser = TeamListParser.getNewListOfTeams();
+        return teamListParser.createFullListOfTeams();
+    }
+
     public JSONArray getTeamList() {
         Object document = Configuration.defaultConfiguration().jsonProvider().parse(in, "UTF-8");
         return JsonPath.read(document, "$..standard[?(@.isNBAFranchise==true)].fullName");
     }
+
     public String getTeamId(String teamName) {
         Object document = Configuration.defaultConfiguration().jsonProvider().parse(in, "UTF-8");
         List<String> id = JsonPath.read(document, "$..standard[?(@.fullName=="+ teamName +")].teamId");
         return id.get(0);
     }
-    //
-    public String getTeamUrlName(String teamId) {
-        Object document = Configuration.defaultConfiguration().jsonProvider().parse(in, "UTF-8");
-        List<String> urlName = JsonPath.read(document, "$..standard[?(@.teamId=="+ teamId +")].urlName");
-        return urlName.get(0);
-    }
+
 }

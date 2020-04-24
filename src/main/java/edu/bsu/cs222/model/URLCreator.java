@@ -1,6 +1,5 @@
 package edu.bsu.cs222.model;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -31,7 +30,7 @@ public class URLCreator {
         con.setRequestMethod("GET");
         return con.getInputStream();
     }
-    //
+
 
     public static String changeToDate(String year){
         String date = null ;

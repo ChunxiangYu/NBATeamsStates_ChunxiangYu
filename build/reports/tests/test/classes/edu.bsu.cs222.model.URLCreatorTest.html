@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.236s</div>
+<div class="counter">0.591s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,120 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testGetTeamStatsUrl()"></a>
-<h3 class="failures">testGetTeamStatsUrl()</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
-	at edu.bsu.cs222.model.URLCreatorTest.testGetTeamStatsUrl(URLCreatorTest.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -185,17 +78,1246 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">testGetTeamStatsUrl()</td>
-<td class="failures">0.236s</td>
-<td class="failures">failed</td>
+<td class="success">testGetTeamListUrl()</td>
+<td class="success">0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetTeamListUrlStream()</td>
+<td class="success">0.083s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetTeamStatsUrlStream()</td>
+<td class="success">0.459s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testReadJsonFile()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>19538
-{&quot;_internal&quot;:{&quot;pubDateTime&quot;:&quot;2020-04-16 02:59:09.943 EDT&quot;,&quot;igorPath&quot;:&quot;S3,1587020346743,1587020349165|router,1587020349165,1587020349201|domUpdater,1587020349294,1587020349813|feedProducer,1587020349880,1587020351010&quot;,&quot;xslt&quot;:&quot;NBA/xsl/league/standings/marty_all_standings.xsl&quot;,&quot;xsltForceRecompile&quot;:&quot;true&quot;,&quot;xsltInCache&quot;:&quot;false&quot;,&quot;xsltCompileTimeMillis&quot;:&quot;35&quot;,&quot;xsltTransformTimeMillis&quot;:&quot;299&quot;,&quot;consolidatedDomKey&quot;:&quot;prod__transform__marty_standings_all__4338502768810&quot;,&quot;endToEndTimeMillis&quot;:&quot;4267&quot;},&quot;league&quot;:{&quot;standard&quot;:{&quot;seasonYear&quot;:2019,&quot;seasonStageId&quot;:2,&quot;teams&quot;:[{&quot;teamId&quot;:&quot;1610612749&quot;,&quot;win&quot;:&quot;53&quot;,&quot;loss&quot;:&quot;12&quot;,&quot;winPct&quot;:&quot;.815&quot;,&quot;winPctV2&quot;:&quot;81.5&quot;,&quot;lossPct&quot;:&quot;.185&quot;,&quot;lossPctV2&quot;:&quot;18.5&quot;,&quot;gamesBehind&quot;:&quot;0.0&quot;,&quot;divGamesBehind&quot;:&quot;0.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;P&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;x&quot;,&quot;confRank&quot;:&quot;1&quot;,&quot;confWin&quot;:&quot;34&quot;,&quot;confLoss&quot;:&quot;5&quot;,&quot;divWin&quot;:&quot;13&quot;,&quot;divLoss&quot;:&quot;1&quot;,&quot;homeWin&quot;:&quot;28&quot;,&quot;homeLoss&quot;:&quot;3&quot;,&quot;awayWin&quot;:&quot;25&quot;,&quot;awayLoss&quot;:&quot;9&quot;,&quot;lastTenWin&quot;:&quot;6&quot;,&quot;lastTenLoss&quot;:&quot;4&quot;,&quot;streak&quot;:&quot;3&quot;,&quot;divRank&quot;:&quot;1&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Milwaukee&quot;,&quot;teamName&quot;:&quot;Milwaukee&quot;,&quot;teamCode&quot;:&quot;bucks&quot;,&quot;teamNickname&quot;:&quot;Bucks&quot;,&quot;teamTricode&quot;:&quot;MIL&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;1&quot;,&quot;streakText&quot;:&quot;L 3&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:1,&quot;nickname&quot;:2,&quot;win&quot;:1,&quot;loss&quot;:30,&quot;winPct&quot;:1,&quot;gamesBehind&quot;:29,&quot;confWinLoss&quot;:1,&quot;divWinLoss&quot;:1,&quot;homeWinLoss&quot;:2,&quot;awayWinLoss&quot;:2,&quot;lastTenWinLoss&quot;:6,&quot;streak&quot;:28}},{&quot;teamId&quot;:&quot;1610612747&quot;,&quot;win&quot;:&quot;49&quot;,&quot;loss&quot;:&quot;14&quot;,&quot;winPct&quot;:&quot;.778&quot;,&quot;winPctV2&quot;:&quot;77.8&quot;,&quot;lossPct&quot;:&quot;.222&quot;,&quot;lossPctV2&quot;:&quot;22.2&quot;,&quot;gamesBehind&quot;:&quot;0.0&quot;,&quot;divGamesBehind&quot;:&quot;0.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;P&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;x&quot;,&quot;confRank&quot;:&quot;1&quot;,&quot;confWin&quot;:&quot;33&quot;,&quot;confLoss&quot;:&quot;7&quot;,&quot;divWin&quot;:&quot;9&quot;,&quot;divLoss&quot;:&quot;2&quot;,&quot;homeWin&quot;:&quot;23&quot;,&quot;homeLoss&quot;:&quot;8&quot;,&quot;awayWin&quot;:&quot;26&quot;,&quot;awayLoss&quot;:&quot;6&quot;,&quot;lastTenWin&quot;:&quot;8&quot;,&quot;lastTenLoss&quot;:&quot;2&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;1&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Los Angeles&quot;,&quot;teamName&quot;:&quot;Los Angeles&quot;,&quot;teamCode&quot;:&quot;lakers&quot;,&quot;teamNickname&quot;:&quot;Lakers&quot;,&quot;teamTricode&quot;:&quot;LAL&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;1&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:2,&quot;nickname&quot;:14,&quot;win&quot;:2,&quot;loss&quot;:29,&quot;winPct&quot;:2,&quot;gamesBehind&quot;:30,&quot;confWinLoss&quot;:2,&quot;divWinLoss&quot;:6,&quot;homeWinLoss&quot;:6,&quot;awayWinLoss&quot;:1,&quot;lastTenWinLoss&quot;:1,&quot;streak&quot;:23}},{&quot;teamId&quot;:&quot;1610612761&quot;,&quot;win&quot;:&quot;46&quot;,&quot;loss&quot;:&quot;18&quot;,&quot;winPct&quot;:&quot;.719&quot;,&quot;winPctV2&quot;:&quot;71.9&quot;,&quot;lossPct&quot;:&quot;.281&quot;,&quot;lossPctV2&quot;:&quot;28.1&quot;,&quot;gamesBehind&quot;:&quot;6.5&quot;,&quot;divGamesBehind&quot;:&quot;0.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;P&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;x&quot;,&quot;confRank&quot;:&quot;2&quot;,&quot;confWin&quot;:&quot;30&quot;,&quot;confLoss&quot;:&quot;10&quot;,&quot;divWin&quot;:&quot;8&quot;,&quot;divLoss&quot;:&quot;4&quot;,&quot;homeWin&quot;:&quot;23&quot;,&quot;homeLoss&quot;:&quot;9&quot;,&quot;awayWin&quot;:&quot;23&quot;,&quot;awayLoss&quot;:&quot;9&quot;,&quot;lastTenWin&quot;:&quot;6&quot;,&quot;lastTenLoss&quot;:&quot;4&quot;,&quot;streak&quot;:&quot;4&quot;,&quot;divRank&quot;:&quot;1&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Toronto&quot;,&quot;teamName&quot;:&quot;Toronto&quot;,&quot;teamCode&quot;:&quot;raptors&quot;,&quot;teamNickname&quot;:&quot;Raptors&quot;,&quot;teamTricode&quot;:&quot;TOR&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;1&quot;,&quot;streakText&quot;:&quot;W 4&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:3,&quot;nickname&quot;:22,&quot;win&quot;:3,&quot;loss&quot;:28,&quot;winPct&quot;:3,&quot;gamesBehind&quot;:27,&quot;confWinLoss&quot;:3,&quot;divWinLoss&quot;:9,&quot;homeWinLoss&quot;:8,&quot;awayWinLoss&quot;:3,&quot;lastTenWinLoss&quot;:10,&quot;streak&quot;:1}},{&quot;teamId&quot;:&quot;1610612746&quot;,&quot;win&quot;:&quot;44&quot;,&quot;loss&quot;:&quot;20&quot;,&quot;winPct&quot;:&quot;.688&quot;,&quot;winPctV2&quot;:&quot;68.8&quot;,&quot;lossPct&quot;:&quot;.312&quot;,&quot;lossPctV2&quot;:&quot;31.2&quot;,&quot;gamesBehind&quot;:&quot;5.5&quot;,&quot;divGamesBehind&quot;:&quot;5.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;2&quot;,&quot;confWin&quot;:&quot;27&quot;,&quot;confLoss&quot;:&quot;14&quot;,&quot;divWin&quot;:&quot;8&quot;,&quot;divLoss&quot;:&quot;4&quot;,&quot;homeWin&quot;:&quot;25&quot;,&quot;homeLoss&quot;:&quot;7&quot;,&quot;awayWin&quot;:&quot;19&quot;,&quot;awayLoss&quot;:&quot;13&quot;,&quot;lastTenWin&quot;:&quot;7&quot;,&quot;lastTenLoss&quot;:&quot;3&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;2&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;LA&quot;,&quot;teamName&quot;:&quot;LA&quot;,&quot;teamCode&quot;:&quot;clippers&quot;,&quot;teamNickname&quot;:&quot;Clippers&quot;,&quot;teamTricode&quot;:&quot;LAC&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:4,&quot;nickname&quot;:6,&quot;win&quot;:4,&quot;loss&quot;:27,&quot;winPct&quot;:4,&quot;gamesBehind&quot;:28,&quot;confWinLoss&quot;:6,&quot;divWinLoss&quot;:8,&quot;homeWinLoss&quot;:4,&quot;awayWinLoss&quot;:8,&quot;lastTenWinLoss&quot;:3,&quot;streak&quot;:9}},{&quot;teamId&quot;:&quot;1610612738&quot;,&quot;win&quot;:&quot;43&quot;,&quot;loss&quot;:&quot;21&quot;,&quot;winPct&quot;:&quot;.672&quot;,&quot;winPctV2&quot;:&quot;67.2&quot;,&quot;lossPct&quot;:&quot;.328&quot;,&quot;lossPctV2&quot;:&quot;32.8&quot;,&quot;gamesBehind&quot;:&quot;9.5&quot;,&quot;divGamesBehind&quot;:&quot;3.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;P&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;x&quot;,&quot;confRank&quot;:&quot;3&quot;,&quot;confWin&quot;:&quot;27&quot;,&quot;confLoss&quot;:&quot;10&quot;,&quot;divWin&quot;:&quot;7&quot;,&quot;divLoss&quot;:&quot;6&quot;,&quot;homeWin&quot;:&quot;23&quot;,&quot;homeLoss&quot;:&quot;9&quot;,&quot;awayWin&quot;:&quot;20&quot;,&quot;awayLoss&quot;:&quot;12&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;2&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Boston&quot;,&quot;teamName&quot;:&quot;Boston&quot;,&quot;teamCode&quot;:&quot;celtics&quot;,&quot;teamNickname&quot;:&quot;Celtics&quot;,&quot;teamTricode&quot;:&quot;BOS&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;1&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:5,&quot;nickname&quot;:5,&quot;win&quot;:5,&quot;loss&quot;:26,&quot;winPct&quot;:5,&quot;gamesBehind&quot;:22,&quot;confWinLoss&quot;:5,&quot;divWinLoss&quot;:14,&quot;homeWinLoss&quot;:7,&quot;awayWinLoss&quot;:6,&quot;lastTenWinLoss&quot;:13,&quot;streak&quot;:8}},{&quot;teamId&quot;:&quot;1610612743&quot;,&quot;win&quot;:&quot;43&quot;,&quot;loss&quot;:&quot;22&quot;,&quot;winPct&quot;:&quot;.662&quot;,&quot;winPctV2&quot;:&quot;66.2&quot;,&quot;lossPct&quot;:&quot;.338&quot;,&quot;lossPctV2&quot;:&quot;33.8&quot;,&quot;gamesBehind&quot;:&quot;7.0&quot;,&quot;divGamesBehind&quot;:&quot;0.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;3&quot;,&quot;confWin&quot;:&quot;26&quot;,&quot;confLoss&quot;:&quot;13&quot;,&quot;divWin&quot;:&quot;10&quot;,&quot;divLoss&quot;:&quot;1&quot;,&quot;homeWin&quot;:&quot;25&quot;,&quot;homeLoss&quot;:&quot;8&quot;,&quot;awayWin&quot;:&quot;18&quot;,&quot;awayLoss&quot;:&quot;14&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;1&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Denver&quot;,&quot;teamName&quot;:&quot;Denver&quot;,&quot;teamCode&quot;:&quot;nuggets&quot;,&quot;teamNickname&quot;:&quot;Nuggets&quot;,&quot;teamTricode&quot;:&quot;DEN&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:6,&quot;nickname&quot;:18,&quot;win&quot;:6,&quot;loss&quot;:25,&quot;winPct&quot;:6,&quot;gamesBehind&quot;:26,&quot;confWinLoss&quot;:7,&quot;divWinLoss&quot;:3,&quot;homeWinLoss&quot;:5,&quot;awayWinLoss&quot;:9,&quot;lastTenWinLoss&quot;:16,&quot;streak&quot;:24}},{&quot;teamId&quot;:&quot;1610612762&quot;,&quot;win&quot;:&quot;41&quot;,&quot;loss&quot;:&quot;23&quot;,&quot;winPct&quot;:&quot;.641&quot;,&quot;winPctV2&quot;:&quot;64.1&quot;,&quot;lossPct&quot;:&quot;.359&quot;,&quot;lossPctV2&quot;:&quot;35.9&quot;,&quot;gamesBehind&quot;:&quot;8.5&quot;,&quot;divGamesBehind&quot;:&quot;1.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;4&quot;,&quot;confWin&quot;:&quot;21&quot;,&quot;confLoss&quot;:&quot;16&quot;,&quot;divWin&quot;:&quot;5&quot;,&quot;divLoss&quot;:&quot;5&quot;,&quot;homeWin&quot;:&quot;21&quot;,&quot;homeLoss&quot;:&quot;10&quot;,&quot;awayWin&quot;:&quot;20&quot;,&quot;awayLoss&quot;:&quot;13&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;2&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Utah&quot;,&quot;teamName&quot;:&quot;Utah&quot;,&quot;teamCode&quot;:&quot;jazz&quot;,&quot;teamNickname&quot;:&quot;Jazz&quot;,&quot;teamTricode&quot;:&quot;UTA&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:7,&quot;nickname&quot;:11,&quot;win&quot;:8,&quot;loss&quot;:24,&quot;winPct&quot;:7,&quot;gamesBehind&quot;:25,&quot;confWinLoss&quot;:13,&quot;divWinLoss&quot;:18,&quot;homeWinLoss&quot;:10,&quot;awayWinLoss&quot;:7,&quot;lastTenWinLoss&quot;:14,&quot;streak&quot;:21}},{&quot;teamId&quot;:&quot;1610612748&quot;,&quot;win&quot;:&quot;41&quot;,&quot;loss&quot;:&quot;24&quot;,&quot;winPct&quot;:&quot;.631&quot;,&quot;winPctV2&quot;:&quot;63.1&quot;,&quot;lossPct&quot;:&quot;.369&quot;,&quot;lossPctV2&quot;:&quot;36.9&quot;,&quot;gamesBehind&quot;:&quot;12.0&quot;,&quot;divGamesBehind&quot;:&quot;0.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;4&quot;,&quot;confWin&quot;:&quot;28&quot;,&quot;confLoss&quot;:&quot;10&quot;,&quot;divWin&quot;:&quot;10&quot;,&quot;divLoss&quot;:&quot;4&quot;,&quot;homeWin&quot;:&quot;27&quot;,&quot;homeLoss&quot;:&quot;5&quot;,&quot;awayWin&quot;:&quot;14&quot;,&quot;awayLoss&quot;:&quot;19&quot;,&quot;lastTenWin&quot;:&quot;6&quot;,&quot;lastTenLoss&quot;:&quot;4&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;1&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Miami&quot;,&quot;teamName&quot;:&quot;Miami&quot;,&quot;teamCode&quot;:&quot;heat&quot;,&quot;teamNickname&quot;:&quot;Heat&quot;,&quot;teamTricode&quot;:&quot;MIA&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:8,&quot;nickname&quot;:9,&quot;win&quot;:7,&quot;loss&quot;:21,&quot;winPct&quot;:8,&quot;gamesBehind&quot;:20,&quot;confWinLoss&quot;:4,&quot;divWinLoss&quot;:5,&quot;homeWinLoss&quot;:3,&quot;awayWinLoss&quot;:14,&quot;lastTenWinLoss&quot;:7,&quot;streak&quot;:20}},{&quot;teamId&quot;:&quot;1610612745&quot;,&quot;win&quot;:&quot;40&quot;,&quot;loss&quot;:&quot;24&quot;,&quot;winPct&quot;:&quot;.625&quot;,&quot;winPctV2&quot;:&quot;62.5&quot;,&quot;lossPct&quot;:&quot;.375&quot;,&quot;lossPctV2&quot;:&quot;37.5&quot;,&quot;gamesBehind&quot;:&quot;9.5&quot;,&quot;divGamesBehind&quot;:&quot;0.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;6&quot;,&quot;confWin&quot;:&quot;25&quot;,&quot;confLoss&quot;:&quot;17&quot;,&quot;divWin&quot;:&quot;7&quot;,&quot;divLoss&quot;:&quot;4&quot;,&quot;homeWin&quot;:&quot;22&quot;,&quot;homeLoss&quot;:&quot;10&quot;,&quot;awayWin&quot;:&quot;18&quot;,&quot;awayLoss&quot;:&quot;14&quot;,&quot;lastTenWin&quot;:&quot;6&quot;,&quot;lastTenLoss&quot;:&quot;4&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;1&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Houston&quot;,&quot;teamName&quot;:&quot;Houston&quot;,&quot;teamCode&quot;:&quot;rockets&quot;,&quot;teamNickname&quot;:&quot;Rockets&quot;,&quot;teamTricode&quot;:&quot;HOU&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:9,&quot;nickname&quot;:23,&quot;win&quot;:10,&quot;loss&quot;:22,&quot;winPct&quot;:9,&quot;gamesBehind&quot;:23,&quot;confWinLoss&quot;:11,&quot;divWinLoss&quot;:11,&quot;homeWinLoss&quot;:9,&quot;awayWinLoss&quot;:10,&quot;lastTenWinLoss&quot;:11,&quot;streak&quot;:13}},{&quot;teamId&quot;:&quot;1610612760&quot;,&quot;win&quot;:&quot;40&quot;,&quot;loss&quot;:&quot;24&quot;,&quot;winPct&quot;:&quot;.625&quot;,&quot;winPctV2&quot;:&quot;62.5&quot;,&quot;lossPct&quot;:&quot;.375&quot;,&quot;lossPctV2&quot;:&quot;37.5&quot;,&quot;gamesBehind&quot;:&quot;9.5&quot;,&quot;divGamesBehind&quot;:&quot;2.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;5&quot;,&quot;confWin&quot;:&quot;25&quot;,&quot;confLoss&quot;:&quot;15&quot;,&quot;divWin&quot;:&quot;7&quot;,&quot;divLoss&quot;:&quot;4&quot;,&quot;homeWin&quot;:&quot;20&quot;,&quot;homeLoss&quot;:&quot;13&quot;,&quot;awayWin&quot;:&quot;20&quot;,&quot;awayLoss&quot;:&quot;11&quot;,&quot;lastTenWin&quot;:&quot;8&quot;,&quot;lastTenLoss&quot;:&quot;2&quot;,&quot;streak&quot;:&quot;3&quot;,&quot;divRank&quot;:&quot;3&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Oklahoma City&quot;,&quot;teamName&quot;:&quot;Oklahoma City&quot;,&quot;teamCode&quot;:&quot;thunder&quot;,&quot;teamNickname&quot;:&quot;Thunder&quot;,&quot;teamTricode&quot;:&quot;OKC&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 3&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:10,&quot;nickname&quot;:26,&quot;win&quot;:11,&quot;loss&quot;:23,&quot;winPct&quot;:10,&quot;gamesBehind&quot;:24,&quot;confWinLoss&quot;:10,&quot;divWinLoss&quot;:12,&quot;homeWinLoss&quot;:12,&quot;awayWinLoss&quot;:5,&quot;lastTenWinLoss&quot;:2,&quot;streak&quot;:4}},{&quot;teamId&quot;:&quot;1610612754&quot;,&quot;win&quot;:&quot;39&quot;,&quot;loss&quot;:&quot;26&quot;,&quot;winPct&quot;:&quot;.600&quot;,&quot;winPctV2&quot;:&quot;60&quot;,&quot;lossPct&quot;:&quot;.400&quot;,&quot;lossPctV2&quot;:&quot;40&quot;,&quot;gamesBehind&quot;:&quot;14.0&quot;,&quot;divGamesBehind&quot;:&quot;14.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;5&quot;,&quot;confWin&quot;:&quot;24&quot;,&quot;confLoss&quot;:&quot;18&quot;,&quot;divWin&quot;:&quot;8&quot;,&quot;divLoss&quot;:&quot;7&quot;,&quot;homeWin&quot;:&quot;21&quot;,&quot;homeLoss&quot;:&quot;11&quot;,&quot;awayWin&quot;:&quot;18&quot;,&quot;awayLoss&quot;:&quot;15&quot;,&quot;lastTenWin&quot;:&quot;7&quot;,&quot;lastTenLoss&quot;:&quot;3&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;2&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Indiana&quot;,&quot;teamName&quot;:&quot;Indiana&quot;,&quot;teamCode&quot;:&quot;pacers&quot;,&quot;teamNickname&quot;:&quot;Pacers&quot;,&quot;teamTricode&quot;:&quot;IND&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:11,&quot;nickname&quot;:19,&quot;win&quot;:13,&quot;loss&quot;:20,&quot;winPct&quot;:12,&quot;gamesBehind&quot;:19,&quot;confWinLoss&quot;:12,&quot;divWinLoss&quot;:10,&quot;homeWinLoss&quot;:11,&quot;awayWinLoss&quot;:11,&quot;lastTenWinLoss&quot;:5,&quot;streak&quot;:25}},{&quot;teamId&quot;:&quot;1610612755&quot;,&quot;win&quot;:&quot;39&quot;,&quot;loss&quot;:&quot;26&quot;,&quot;winPct&quot;:&quot;.600&quot;,&quot;winPctV2&quot;:&quot;60&quot;,&quot;lossPct&quot;:&quot;.400&quot;,&quot;lossPctV2&quot;:&quot;40&quot;,&quot;gamesBehind&quot;:&quot;14.0&quot;,&quot;divGamesBehind&quot;:&quot;7.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;6&quot;,&quot;confWin&quot;:&quot;26&quot;,&quot;confLoss&quot;:&quot;16&quot;,&quot;divWin&quot;:&quot;11&quot;,&quot;divLoss&quot;:&quot;4&quot;,&quot;homeWin&quot;:&quot;29&quot;,&quot;homeLoss&quot;:&quot;2&quot;,&quot;awayWin&quot;:&quot;10&quot;,&quot;awayLoss&quot;:&quot;24&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;3&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Philadelphia&quot;,&quot;teamName&quot;:&quot;Philadelphia&quot;,&quot;teamCode&quot;:&quot;sixers&quot;,&quot;teamNickname&quot;:&quot;76ers&quot;,&quot;teamTricode&quot;:&quot;PHI&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:12,&quot;nickname&quot;:1,&quot;win&quot;:12,&quot;loss&quot;:19,&quot;winPct&quot;:11,&quot;gamesBehind&quot;:18,&quot;confWinLoss&quot;:8,&quot;divWinLoss&quot;:2,&quot;homeWinLoss&quot;:1,&quot;awayWinLoss&quot;:24,&quot;lastTenWinLoss&quot;:12,&quot;streak&quot;:6}},{&quot;teamId&quot;:&quot;1610612742&quot;,&quot;win&quot;:&quot;40&quot;,&quot;loss&quot;:&quot;27&quot;,&quot;winPct&quot;:&quot;.597&quot;,&quot;winPctV2&quot;:&quot;59.7&quot;,&quot;lossPct&quot;:&quot;.403&quot;,&quot;lossPctV2&quot;:&quot;40.3&quot;,&quot;gamesBehind&quot;:&quot;11.0&quot;,&quot;divGamesBehind&quot;:&quot;1.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;7&quot;,&quot;confWin&quot;:&quot;25&quot;,&quot;confLoss&quot;:&quot;15&quot;,&quot;divWin&quot;:&quot;10&quot;,&quot;divLoss&quot;:&quot;3&quot;,&quot;homeWin&quot;:&quot;19&quot;,&quot;homeLoss&quot;:&quot;15&quot;,&quot;awayWin&quot;:&quot;21&quot;,&quot;awayLoss&quot;:&quot;12&quot;,&quot;lastTenWin&quot;:&quot;6&quot;,&quot;lastTenLoss&quot;:&quot;4&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;2&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Dallas&quot;,&quot;teamName&quot;:&quot;Dallas&quot;,&quot;teamCode&quot;:&quot;mavericks&quot;,&quot;teamNickname&quot;:&quot;Mavericks&quot;,&quot;teamTricode&quot;:&quot;DAL&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:13,&quot;nickname&quot;:16,&quot;win&quot;:9,&quot;loss&quot;:18,&quot;winPct&quot;:13,&quot;gamesBehind&quot;:21,&quot;confWinLoss&quot;:9,&quot;divWinLoss&quot;:4,&quot;homeWinLoss&quot;:13,&quot;awayWinLoss&quot;:4,&quot;lastTenWinLoss&quot;:9,&quot;streak&quot;:12}},{&quot;teamId&quot;:&quot;1610612763&quot;,&quot;win&quot;:&quot;32&quot;,&quot;loss&quot;:&quot;33&quot;,&quot;winPct&quot;:&quot;.492&quot;,&quot;winPctV2&quot;:&quot;49.2&quot;,&quot;lossPct&quot;:&quot;.508&quot;,&quot;lossPctV2&quot;:&quot;50.8&quot;,&quot;gamesBehind&quot;:&quot;18.0&quot;,&quot;divGamesBehind&quot;:&quot;8.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;8&quot;,&quot;confWin&quot;:&quot;19&quot;,&quot;confLoss&quot;:&quot;22&quot;,&quot;divWin&quot;:&quot;4&quot;,&quot;divLoss&quot;:&quot;7&quot;,&quot;homeWin&quot;:&quot;18&quot;,&quot;homeLoss&quot;:&quot;15&quot;,&quot;awayWin&quot;:&quot;14&quot;,&quot;awayLoss&quot;:&quot;18&quot;,&quot;lastTenWin&quot;:&quot;4&quot;,&quot;lastTenLoss&quot;:&quot;6&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;3&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Memphis&quot;,&quot;teamName&quot;:&quot;Memphis&quot;,&quot;teamCode&quot;:&quot;grizzlies&quot;,&quot;teamNickname&quot;:&quot;Grizzlies&quot;,&quot;teamTricode&quot;:&quot;MEM&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:14,&quot;nickname&quot;:7,&quot;win&quot;:14,&quot;loss&quot;:17,&quot;winPct&quot;:14,&quot;gamesBehind&quot;:17,&quot;confWinLoss&quot;:17,&quot;divWinLoss&quot;:23,&quot;homeWinLoss&quot;:16,&quot;awayWinLoss&quot;:13,&quot;lastTenWinLoss&quot;:20,&quot;streak&quot;:18}},{&quot;teamId&quot;:&quot;1610612751&quot;,&quot;win&quot;:&quot;30&quot;,&quot;loss&quot;:&quot;34&quot;,&quot;winPct&quot;:&quot;.469&quot;,&quot;winPctV2&quot;:&quot;46.9&quot;,&quot;lossPct&quot;:&quot;.531&quot;,&quot;lossPctV2&quot;:&quot;53.1&quot;,&quot;gamesBehind&quot;:&quot;22.5&quot;,&quot;divGamesBehind&quot;:&quot;16.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;7&quot;,&quot;confWin&quot;:&quot;20&quot;,&quot;confLoss&quot;:&quot;21&quot;,&quot;divWin&quot;:&quot;6&quot;,&quot;divLoss&quot;:&quot;9&quot;,&quot;homeWin&quot;:&quot;18&quot;,&quot;homeLoss&quot;:&quot;14&quot;,&quot;awayWin&quot;:&quot;12&quot;,&quot;awayLoss&quot;:&quot;20&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;3&quot;,&quot;divRank&quot;:&quot;4&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Brooklyn&quot;,&quot;teamName&quot;:&quot;Brooklyn&quot;,&quot;teamCode&quot;:&quot;nets&quot;,&quot;teamNickname&quot;:&quot;Nets&quot;,&quot;teamTricode&quot;:&quot;BKN&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 3&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:15,&quot;nickname&quot;:17,&quot;win&quot;:16,&quot;loss&quot;:16,&quot;winPct&quot;:15,&quot;gamesBehind&quot;:12,&quot;confWinLoss&quot;:15,&quot;divWinLoss&quot;:17,&quot;homeWinLoss&quot;:14,&quot;awayWinLoss&quot;:19,&quot;lastTenWinLoss&quot;:15,&quot;streak&quot;:3}},{&quot;teamId&quot;:&quot;1610612753&quot;,&quot;win&quot;:&quot;30&quot;,&quot;loss&quot;:&quot;35&quot;,&quot;winPct&quot;:&quot;.462&quot;,&quot;winPctV2&quot;:&quot;46.2&quot;,&quot;lossPct&quot;:&quot;.538&quot;,&quot;lossPctV2&quot;:&quot;53.8&quot;,&quot;gamesBehind&quot;:&quot;23.0&quot;,&quot;divGamesBehind&quot;:&quot;11.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;8&quot;,&quot;confWin&quot;:&quot;19&quot;,&quot;confLoss&quot;:&quot;18&quot;,&quot;divWin&quot;:&quot;9&quot;,&quot;divLoss&quot;:&quot;5&quot;,&quot;homeWin&quot;:&quot;16&quot;,&quot;homeLoss&quot;:&quot;15&quot;,&quot;awayWin&quot;:&quot;14&quot;,&quot;awayLoss&quot;:&quot;20&quot;,&quot;lastTenWin&quot;:&quot;6&quot;,&quot;lastTenLoss&quot;:&quot;4&quot;,&quot;streak&quot;:&quot;3&quot;,&quot;divRank&quot;:&quot;2&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Orlando&quot;,&quot;teamName&quot;:&quot;Orlando&quot;,&quot;teamCode&quot;:&quot;magic&quot;,&quot;teamNickname&quot;:&quot;Magic&quot;,&quot;teamTricode&quot;:&quot;ORL&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 3&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:16,&quot;nickname&quot;:15,&quot;win&quot;:15,&quot;loss&quot;:15,&quot;winPct&quot;:16,&quot;gamesBehind&quot;:11,&quot;confWinLoss&quot;:16,&quot;divWinLoss&quot;:7,&quot;homeWinLoss&quot;:18,&quot;awayWinLoss&quot;:16,&quot;lastTenWinLoss&quot;:8,&quot;streak&quot;:2}},{&quot;teamId&quot;:&quot;1610612757&quot;,&quot;win&quot;:&quot;29&quot;,&quot;loss&quot;:&quot;37&quot;,&quot;winPct&quot;:&quot;.439&quot;,&quot;winPctV2&quot;:&quot;43.9&quot;,&quot;lossPct&quot;:&quot;.561&quot;,&quot;lossPctV2&quot;:&quot;56.1&quot;,&quot;gamesBehind&quot;:&quot;21.5&quot;,&quot;divGamesBehind&quot;:&quot;14.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;9&quot;,&quot;confWin&quot;:&quot;16&quot;,&quot;confLoss&quot;:&quot;26&quot;,&quot;divWin&quot;:&quot;4&quot;,&quot;divLoss&quot;:&quot;8&quot;,&quot;homeWin&quot;:&quot;18&quot;,&quot;homeLoss&quot;:&quot;14&quot;,&quot;awayWin&quot;:&quot;11&quot;,&quot;awayLoss&quot;:&quot;23&quot;,&quot;lastTenWin&quot;:&quot;4&quot;,&quot;lastTenLoss&quot;:&quot;6&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;4&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Portland&quot;,&quot;teamName&quot;:&quot;Portland&quot;,&quot;teamCode&quot;:&quot;blazers&quot;,&quot;teamNickname&quot;:&quot;Trail Blazers&quot;,&quot;teamTricode&quot;:&quot;POR&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:17,&quot;nickname&quot;:28,&quot;win&quot;:17,&quot;loss&quot;:11,&quot;winPct&quot;:17,&quot;gamesBehind&quot;:16,&quot;confWinLoss&quot;:21,&quot;divWinLoss&quot;:24,&quot;homeWinLoss&quot;:15,&quot;awayWinLoss&quot;:22,&quot;lastTenWinLoss&quot;:25,&quot;streak&quot;:15}},{&quot;teamId&quot;:&quot;1610612740&quot;,&quot;win&quot;:&quot;28&quot;,&quot;loss&quot;:&quot;36&quot;,&quot;winPct&quot;:&quot;.438&quot;,&quot;winPctV2&quot;:&quot;43.8&quot;,&quot;lossPct&quot;:&quot;.562&quot;,&quot;lossPctV2&quot;:&quot;56.2&quot;,&quot;gamesBehind&quot;:&quot;21.5&quot;,&quot;divGamesBehind&quot;:&quot;12.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;10&quot;,&quot;confWin&quot;:&quot;17&quot;,&quot;confLoss&quot;:&quot;25&quot;,&quot;divWin&quot;:&quot;3&quot;,&quot;divLoss&quot;:&quot;8&quot;,&quot;homeWin&quot;:&quot;13&quot;,&quot;homeLoss&quot;:&quot;19&quot;,&quot;awayWin&quot;:&quot;15&quot;,&quot;awayLoss&quot;:&quot;17&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;2&quot;,&quot;divRank&quot;:&quot;4&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;New Orleans&quot;,&quot;teamName&quot;:&quot;New Orleans&quot;,&quot;teamCode&quot;:&quot;pelicans&quot;,&quot;teamNickname&quot;:&quot;Pelicans&quot;,&quot;teamTricode&quot;:&quot;NOP&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 2&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:18,&quot;nickname&quot;:20,&quot;win&quot;:19,&quot;loss&quot;:13,&quot;winPct&quot;:19,&quot;gamesBehind&quot;:15,&quot;confWinLoss&quot;:19,&quot;divWinLoss&quot;:26,&quot;homeWinLoss&quot;:23,&quot;awayWinLoss&quot;:12,&quot;lastTenWinLoss&quot;:17,&quot;streak&quot;:5}},{&quot;teamId&quot;:&quot;1610612758&quot;,&quot;win&quot;:&quot;28&quot;,&quot;loss&quot;:&quot;36&quot;,&quot;winPct&quot;:&quot;.438&quot;,&quot;winPctV2&quot;:&quot;43.8&quot;,&quot;lossPct&quot;:&quot;.562&quot;,&quot;lossPctV2&quot;:&quot;56.2&quot;,&quot;gamesBehind&quot;:&quot;21.5&quot;,&quot;divGamesBehind&quot;:&quot;21.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;11&quot;,&quot;confWin&quot;:&quot;20&quot;,&quot;confLoss&quot;:&quot;20&quot;,&quot;divWin&quot;:&quot;7&quot;,&quot;divLoss&quot;:&quot;5&quot;,&quot;homeWin&quot;:&quot;14&quot;,&quot;homeLoss&quot;:&quot;17&quot;,&quot;awayWin&quot;:&quot;14&quot;,&quot;awayLoss&quot;:&quot;19&quot;,&quot;lastTenWin&quot;:&quot;7&quot;,&quot;lastTenLoss&quot;:&quot;3&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;3&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Sacramento&quot;,&quot;teamName&quot;:&quot;Sacramento&quot;,&quot;teamCode&quot;:&quot;kings&quot;,&quot;teamNickname&quot;:&quot;Kings&quot;,&quot;teamTricode&quot;:&quot;SAC&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:19,&quot;nickname&quot;:12,&quot;win&quot;:18,&quot;loss&quot;:12,&quot;winPct&quot;:18,&quot;gamesBehind&quot;:14,&quot;confWinLoss&quot;:14,&quot;divWinLoss&quot;:13,&quot;homeWinLoss&quot;:20,&quot;awayWinLoss&quot;:15,&quot;lastTenWinLoss&quot;:4,&quot;streak&quot;:22}},{&quot;teamId&quot;:&quot;1610612759&quot;,&quot;win&quot;:&quot;27&quot;,&quot;loss&quot;:&quot;36&quot;,&quot;winPct&quot;:&quot;.429&quot;,&quot;winPctV2&quot;:&quot;42.9&quot;,&quot;lossPct&quot;:&quot;.571&quot;,&quot;lossPctV2&quot;:&quot;57.1&quot;,&quot;gamesBehind&quot;:&quot;22.0&quot;,&quot;divGamesBehind&quot;:&quot;12.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;12&quot;,&quot;confWin&quot;:&quot;15&quot;,&quot;confLoss&quot;:&quot;21&quot;,&quot;divWin&quot;:&quot;4&quot;,&quot;divLoss&quot;:&quot;6&quot;,&quot;homeWin&quot;:&quot;16&quot;,&quot;homeLoss&quot;:&quot;14&quot;,&quot;awayWin&quot;:&quot;11&quot;,&quot;awayLoss&quot;:&quot;22&quot;,&quot;lastTenWin&quot;:&quot;5&quot;,&quot;lastTenLoss&quot;:&quot;5&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;5&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;San Antonio&quot;,&quot;teamName&quot;:&quot;San Antonio&quot;,&quot;teamCode&quot;:&quot;spurs&quot;,&quot;teamNickname&quot;:&quot;Spurs&quot;,&quot;teamTricode&quot;:&quot;SAS&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:20,&quot;nickname&quot;:24,&quot;win&quot;:20,&quot;loss&quot;:14,&quot;winPct&quot;:20,&quot;gamesBehind&quot;:13,&quot;confWinLoss&quot;:22,&quot;divWinLoss&quot;:22,&quot;homeWinLoss&quot;:17,&quot;awayWinLoss&quot;:21,&quot;lastTenWinLoss&quot;:18,&quot;streak&quot;:14}},{&quot;teamId&quot;:&quot;1610612756&quot;,&quot;win&quot;:&quot;26&quot;,&quot;loss&quot;:&quot;39&quot;,&quot;winPct&quot;:&quot;.400&quot;,&quot;winPctV2&quot;:&quot;40&quot;,&quot;lossPct&quot;:&quot;.600&quot;,&quot;lossPctV2&quot;:&quot;60&quot;,&quot;gamesBehind&quot;:&quot;24.0&quot;,&quot;divGamesBehind&quot;:&quot;24.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;13&quot;,&quot;confWin&quot;:&quot;15&quot;,&quot;confLoss&quot;:&quot;27&quot;,&quot;divWin&quot;:&quot;5&quot;,&quot;divLoss&quot;:&quot;9&quot;,&quot;homeWin&quot;:&quot;13&quot;,&quot;homeLoss&quot;:&quot;22&quot;,&quot;awayWin&quot;:&quot;13&quot;,&quot;awayLoss&quot;:&quot;17&quot;,&quot;lastTenWin&quot;:&quot;4&quot;,&quot;lastTenLoss&quot;:&quot;6&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;4&quot;,&quot;isWinStreak&quot;:false,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Phoenix&quot;,&quot;teamName&quot;:&quot;Phoenix&quot;,&quot;teamCode&quot;:&quot;suns&quot;,&quot;teamNickname&quot;:&quot;Suns&quot;,&quot;teamTricode&quot;:&quot;PHX&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;L 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:21,&quot;nickname&quot;:25,&quot;win&quot;:21,&quot;loss&quot;:10,&quot;winPct&quot;:21,&quot;gamesBehind&quot;:10,&quot;confWinLoss&quot;:23,&quot;divWinLoss&quot;:19,&quot;homeWinLoss&quot;:24,&quot;awayWinLoss&quot;:17,&quot;lastTenWinLoss&quot;:24,&quot;streak&quot;:26}},{&quot;teamId&quot;:&quot;1610612764&quot;,&quot;win&quot;:&quot;24&quot;,&quot;loss&quot;:&quot;40&quot;,&quot;winPct&quot;:&quot;.375&quot;,&quot;winPctV2&quot;:&quot;37.5&quot;,&quot;lossPct&quot;:&quot;.625&quot;,&quot;lossPctV2&quot;:&quot;62.5&quot;,&quot;gamesBehind&quot;:&quot;28.5&quot;,&quot;divGamesBehind&quot;:&quot;16.5&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:&quot;9&quot;,&quot;confWin&quot;:&quot;17&quot;,&quot;confLoss&quot;:&quot;23&quot;,&quot;divWin&quot;:&quot;5&quot;,&quot;divLoss&quot;:&quot;9&quot;,&quot;homeWin&quot;:&quot;16&quot;,&quot;homeLoss&quot;:&quot;16&quot;,&quot;awayWin&quot;:&quot;8&quot;,&quot;awayLoss&quot;:&quot;24&quot;,&quot;lastTenWin&quot;:&quot;4&quot;,&quot;lastTenLoss&quot;:&quot;6&quot;,&quot;streak&quot;:&quot;1&quot;,&quot;divRank&quot;:&quot;3&quot;,&quot;isWinStreak&quot;:true,&quot;teamSitesOnly&quot;:{&quot;teamKey&quot;:&quot;Washington&quot;,&quot;teamName&quot;:&quot;Washington&quot;,&quot;teamCode&quot;:&quot;wizards&quot;,&quot;teamNickname&quot;:&quot;Wizards&quot;,&quot;teamTricode&quot;:&quot;WAS&quot;,&quot;clinchedConference&quot;:&quot;0&quot;,&quot;clinchedDivision&quot;:&quot;0&quot;,&quot;clinchedPlayoffs&quot;:&quot;0&quot;,&quot;streakText&quot;:&quot;W 1&quot;},&quot;tieBreakerPts&quot;:&quot;&quot;,&quot;sortKey&quot;:{&quot;defaultOrder&quot;:22,&quot;nickname&quot;:30,&quot;win&quot;:22,&quot;loss&quot;:9,&quot;winPct&quot;:22,&quot;gamesBehind&quot;:9,&quot;confWinLoss&quot;:18,&quot;divWinLoss&quot;:20,&quot;homeWinLoss&quot;:19,&quot;awayWinLoss&quot;:28,&quot;lastTenWinLoss&quot;:26,&quot;streak&quot;:16}},{&quot;teamId&quot;:&quot;1610612766&quot;,&quot;win&quot;:&quot;23&quot;,&quot;loss&quot;:&quot;42&quot;,&quot;winPct&quot;:&quot;.354&quot;,&quot;winPctV2&quot;:&quot;35.4&quot;,&quot;lossPct&quot;:&quot;.646&quot;,&quot;lossPctV2&quot;:&quot;64.6&quot;,&quot;gamesBehind&quot;:&quot;30.0&quot;,&quot;divGamesBehind&quot;:&quot;18.0&quot;,&quot;clinchedPlayoffsCode&quot;:&quot;&quot;,&quot;clinchedPlayoffsCodeV2&quot;:&quot;&quot;,&quot;confRank&quot;:
+<pre>
+{
+  &quot;_internal&quot;: {
+    &quot;pubDateTime&quot;: &quot;2020-04-15 06:00:29.179 EDT&quot;,
+    &quot;igorPath&quot;: &quot;cron,1586944825471,1586944825471|router,1586944825471,1586944825743|domUpdater,1586944825887,1586944827323|feedProducer,1586944827416,1586944829581&quot;,
+    &quot;xslt&quot;: &quot;NBA/xsl/league/roster/marty_teams_list.xsl&quot;,
+    &quot;xsltForceRecompile&quot;: &quot;true&quot;,
+    &quot;xsltInCache&quot;: &quot;false&quot;,
+    &quot;xsltCompileTimeMillis&quot;: &quot;1405&quot;,
+    &quot;xsltTransformTimeMillis&quot;: &quot;451&quot;,
+    &quot;consolidatedDomKey&quot;: &quot;prod__transform__marty_teams_list__4788914666988&quot;,
+    &quot;endToEndTimeMillis&quot;: &quot;4110&quot;
+  },
+  &quot;league&quot;: {
+    &quot;standard&quot;: [
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Adelaide&quot;,
+        &quot;altCityName&quot;: &quot;Adelaide&quot;,
+        &quot;fullName&quot;: &quot;Adelaide 36ers&quot;,
+        &quot;tricode&quot;: &quot;ADL&quot;,
+        &quot;teamId&quot;: &quot;15019&quot;,
+        &quot;nickname&quot;: &quot;36ers&quot;,
+        &quot;urlName&quot;: &quot;36ers&quot;,
+        &quot;teamShortName&quot;: &quot;Adelaide&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Atlanta&quot;,
+        &quot;altCityName&quot;: &quot;Atlanta&quot;,
+        &quot;fullName&quot;: &quot;Atlanta Hawks&quot;,
+        &quot;tricode&quot;: &quot;ATL&quot;,
+        &quot;teamId&quot;: &quot;1610612737&quot;,
+        &quot;nickname&quot;: &quot;Hawks&quot;,
+        &quot;urlName&quot;: &quot;hawks&quot;,
+        &quot;teamShortName&quot;: &quot;Atlanta&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Southeast&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: true,
+        &quot;city&quot;: &quot;Away&quot;,
+        &quot;altCityName&quot;: &quot;Away&quot;,
+        &quot;fullName&quot;: &quot;Away Team Wilbon&quot;,
+        &quot;tricode&quot;: &quot;WLB&quot;,
+        &quot;teamId&quot;: &quot;1610616840&quot;,
+        &quot;nickname&quot;: &quot;Team Wilbon&quot;,
+        &quot;urlName&quot;: &quot;team_wilbon&quot;,
+        &quot;teamShortName&quot;: &quot;Team Wilbon&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;East&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Boston&quot;,
+        &quot;altCityName&quot;: &quot;Boston&quot;,
+        &quot;fullName&quot;: &quot;Boston Celtics&quot;,
+        &quot;tricode&quot;: &quot;BOS&quot;,
+        &quot;teamId&quot;: &quot;1610612738&quot;,
+        &quot;nickname&quot;: &quot;Celtics&quot;,
+        &quot;urlName&quot;: &quot;celtics&quot;,
+        &quot;teamShortName&quot;: &quot;Boston&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Atlantic&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Brooklyn&quot;,
+        &quot;altCityName&quot;: &quot;Brooklyn&quot;,
+        &quot;fullName&quot;: &quot;Brooklyn Nets&quot;,
+        &quot;tricode&quot;: &quot;BKN&quot;,
+        &quot;teamId&quot;: &quot;1610612751&quot;,
+        &quot;nickname&quot;: &quot;Nets&quot;,
+        &quot;urlName&quot;: &quot;nets&quot;,
+        &quot;teamShortName&quot;: &quot;Brooklyn&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Atlantic&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Buenos Aires&quot;,
+        &quot;altCityName&quot;: &quot;Buenos Aires&quot;,
+        &quot;fullName&quot;: &quot;Buenos Aires San Lorenzo&quot;,
+        &quot;tricode&quot;: &quot;SLA&quot;,
+        &quot;teamId&quot;: &quot;12330&quot;,
+        &quot;nickname&quot;: &quot;San Lorenzo&quot;,
+        &quot;urlName&quot;: &quot;san_lorenzo&quot;,
+        &quot;teamShortName&quot;: &quot;San Lorenzo&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Charlotte&quot;,
+        &quot;altCityName&quot;: &quot;Charlotte&quot;,
+        &quot;fullName&quot;: &quot;Charlotte Hornets&quot;,
+        &quot;tricode&quot;: &quot;CHA&quot;,
+        &quot;teamId&quot;: &quot;1610612766&quot;,
+        &quot;nickname&quot;: &quot;Hornets&quot;,
+        &quot;urlName&quot;: &quot;hornets&quot;,
+        &quot;teamShortName&quot;: &quot;Charlotte&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Southeast&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Chicago&quot;,
+        &quot;altCityName&quot;: &quot;Chicago&quot;,
+        &quot;fullName&quot;: &quot;Chicago Bulls&quot;,
+        &quot;tricode&quot;: &quot;CHI&quot;,
+        &quot;teamId&quot;: &quot;1610612741&quot;,
+        &quot;nickname&quot;: &quot;Bulls&quot;,
+        &quot;urlName&quot;: &quot;bulls&quot;,
+        &quot;teamShortName&quot;: &quot;Chicago&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Central&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Cleveland&quot;,
+        &quot;altCityName&quot;: &quot;Cleveland&quot;,
+        &quot;fullName&quot;: &quot;Cleveland Cavaliers&quot;,
+        &quot;tricode&quot;: &quot;CLE&quot;,
+        &quot;teamId&quot;: &quot;1610612739&quot;,
+        &quot;nickname&quot;: &quot;Cavaliers&quot;,
+        &quot;urlName&quot;: &quot;cavaliers&quot;,
+        &quot;teamShortName&quot;: &quot;Cleveland&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Central&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Dallas&quot;,
+        &quot;altCityName&quot;: &quot;Dallas&quot;,
+        &quot;fullName&quot;: &quot;Dallas Mavericks&quot;,
+        &quot;tricode&quot;: &quot;DAL&quot;,
+        &quot;teamId&quot;: &quot;1610612742&quot;,
+        &quot;nickname&quot;: &quot;Mavericks&quot;,
+        &quot;urlName&quot;: &quot;mavericks&quot;,
+        &quot;teamShortName&quot;: &quot;Dallas&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Southwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Denver&quot;,
+        &quot;altCityName&quot;: &quot;Denver&quot;,
+        &quot;fullName&quot;: &quot;Denver Nuggets&quot;,
+        &quot;tricode&quot;: &quot;DEN&quot;,
+        &quot;teamId&quot;: &quot;1610612743&quot;,
+        &quot;nickname&quot;: &quot;Nuggets&quot;,
+        &quot;urlName&quot;: &quot;nuggets&quot;,
+        &quot;teamShortName&quot;: &quot;Denver&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Northwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Detroit&quot;,
+        &quot;altCityName&quot;: &quot;Detroit&quot;,
+        &quot;fullName&quot;: &quot;Detroit Pistons&quot;,
+        &quot;tricode&quot;: &quot;DET&quot;,
+        &quot;teamId&quot;: &quot;1610612765&quot;,
+        &quot;nickname&quot;: &quot;Pistons&quot;,
+        &quot;urlName&quot;: &quot;pistons&quot;,
+        &quot;teamShortName&quot;: &quot;Detroit&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Central&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Franca&quot;,
+        &quot;altCityName&quot;: &quot;Franca&quot;,
+        &quot;fullName&quot;: &quot;Franca Franca&quot;,
+        &quot;tricode&quot;: &quot;FRA&quot;,
+        &quot;teamId&quot;: &quot;12332&quot;,
+        &quot;nickname&quot;: &quot;Franca&quot;,
+        &quot;urlName&quot;: &quot;franca&quot;,
+        &quot;teamShortName&quot;: &quot;SESI/Franca&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Golden State&quot;,
+        &quot;altCityName&quot;: &quot;Golden State&quot;,
+        &quot;fullName&quot;: &quot;Golden State Warriors&quot;,
+        &quot;tricode&quot;: &quot;GSW&quot;,
+        &quot;teamId&quot;: &quot;1610612744&quot;,
+        &quot;nickname&quot;: &quot;Warriors&quot;,
+        &quot;urlName&quot;: &quot;warriors&quot;,
+        &quot;teamShortName&quot;: &quot;Golden State&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Pacific&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Guangzhou&quot;,
+        &quot;altCityName&quot;: &quot;Guangzhou&quot;,
+        &quot;fullName&quot;: &quot;Guangzhou Long-Lions&quot;,
+        &quot;tricode&quot;: &quot;GUA&quot;,
+        &quot;teamId&quot;: &quot;15018&quot;,
+        &quot;nickname&quot;: &quot;Long-Lions&quot;,
+        &quot;urlName&quot;: &quot;long-lions&quot;,
+        &quot;teamShortName&quot;: &quot;Guangzhou&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Haifa&quot;,
+        &quot;altCityName&quot;: &quot;Haifa&quot;,
+        &quot;fullName&quot;: &quot;Haifa Maccabi Haifa&quot;,
+        &quot;tricode&quot;: &quot;MAC&quot;,
+        &quot;teamId&quot;: &quot;93&quot;,
+        &quot;nickname&quot;: &quot;Maccabi Haifa&quot;,
+        &quot;urlName&quot;: &quot;maccabi_haifa&quot;,
+        &quot;teamShortName&quot;: &quot;Maccabi Haifa&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Houston&quot;,
+        &quot;altCityName&quot;: &quot;Houston&quot;,
+        &quot;fullName&quot;: &quot;Houston Rockets&quot;,
+        &quot;tricode&quot;: &quot;HOU&quot;,
+        &quot;teamId&quot;: &quot;1610612745&quot;,
+        &quot;nickname&quot;: &quot;Rockets&quot;,
+        &quot;urlName&quot;: &quot;rockets&quot;,
+        &quot;teamShortName&quot;: &quot;Houston&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Southwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Indiana&quot;,
+        &quot;altCityName&quot;: &quot;Indiana&quot;,
+        &quot;fullName&quot;: &quot;Indiana Pacers&quot;,
+        &quot;tricode&quot;: &quot;IND&quot;,
+        &quot;teamId&quot;: &quot;1610612754&quot;,
+        &quot;nickname&quot;: &quot;Pacers&quot;,
+        &quot;urlName&quot;: &quot;pacers&quot;,
+        &quot;teamShortName&quot;: &quot;Indiana&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Central&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;LA&quot;,
+        &quot;altCityName&quot;: &quot;LA Clippers&quot;,
+        &quot;fullName&quot;: &quot;LA Clippers&quot;,
+        &quot;tricode&quot;: &quot;LAC&quot;,
+        &quot;teamId&quot;: &quot;1610612746&quot;,
+        &quot;nickname&quot;: &quot;Clippers&quot;,
+        &quot;urlName&quot;: &quot;clippers&quot;,
+        &quot;teamShortName&quot;: &quot;LA Clippers&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Pacific&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Los Angeles&quot;,
+        &quot;altCityName&quot;: &quot;Los Angeles Lakers&quot;,
+        &quot;fullName&quot;: &quot;Los Angeles Lakers&quot;,
+        &quot;tricode&quot;: &quot;LAL&quot;,
+        &quot;teamId&quot;: &quot;1610612747&quot;,
+        &quot;nickname&quot;: &quot;Lakers&quot;,
+        &quot;urlName&quot;: &quot;lakers&quot;,
+        &quot;teamShortName&quot;: &quot;L.A. Lakers&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Pacific&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Melbourne&quot;,
+        &quot;altCityName&quot;: &quot;Melbourne&quot;,
+        &quot;fullName&quot;: &quot;Melbourne United&quot;,
+        &quot;tricode&quot;: &quot;MEL&quot;,
+        &quot;teamId&quot;: &quot;15016&quot;,
+        &quot;nickname&quot;: &quot;United&quot;,
+        &quot;urlName&quot;: &quot;united&quot;,
+        &quot;teamShortName&quot;: &quot;Melbourne&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Memphis&quot;,
+        &quot;altCityName&quot;: &quot;Memphis&quot;,
+        &quot;fullName&quot;: &quot;Memphis Grizzlies&quot;,
+        &quot;tricode&quot;: &quot;MEM&quot;,
+        &quot;teamId&quot;: &quot;1610612763&quot;,
+        &quot;nickname&quot;: &quot;Grizzlies&quot;,
+        &quot;urlName&quot;: &quot;grizzlies&quot;,
+        &quot;teamShortName&quot;: &quot;Memphis&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Southwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Miami&quot;,
+        &quot;altCityName&quot;: &quot;Miami&quot;,
+        &quot;fullName&quot;: &quot;Miami Heat&quot;,
+        &quot;tricode&quot;: &quot;MIA&quot;,
+        &quot;teamId&quot;: &quot;1610612748&quot;,
+        &quot;nickname&quot;: &quot;Heat&quot;,
+        &quot;urlName&quot;: &quot;heat&quot;,
+        &quot;teamShortName&quot;: &quot;Miami&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Southeast&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Milwaukee&quot;,
+        &quot;altCityName&quot;: &quot;Milwaukee&quot;,
+        &quot;fullName&quot;: &quot;Milwaukee Bucks&quot;,
+        &quot;tricode&quot;: &quot;MIL&quot;,
+        &quot;teamId&quot;: &quot;1610612749&quot;,
+        &quot;nickname&quot;: &quot;Bucks&quot;,
+        &quot;urlName&quot;: &quot;bucks&quot;,
+        &quot;teamShortName&quot;: &quot;Milwaukee&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Central&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Minnesota&quot;,
+        &quot;altCityName&quot;: &quot;Minnesota&quot;,
+        &quot;fullName&quot;: &quot;Minnesota Timberwolves&quot;,
+        &quot;tricode&quot;: &quot;MIN&quot;,
+        &quot;teamId&quot;: &quot;1610612750&quot;,
+        &quot;nickname&quot;: &quot;Timberwolves&quot;,
+        &quot;urlName&quot;: &quot;timberwolves&quot;,
+        &quot;teamShortName&quot;: &quot;Minnesota&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Northwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;New Orleans&quot;,
+        &quot;altCityName&quot;: &quot;New Orleans&quot;,
+        &quot;fullName&quot;: &quot;New Orleans Pelicans&quot;,
+        &quot;tricode&quot;: &quot;NOP&quot;,
+        &quot;teamId&quot;: &quot;1610612740&quot;,
+        &quot;nickname&quot;: &quot;Pelicans&quot;,
+        &quot;urlName&quot;: &quot;pelicans&quot;,
+        &quot;teamShortName&quot;: &quot;New Orleans&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Southwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;altCityName&quot;: &quot;New York&quot;,
+        &quot;fullName&quot;: &quot;New York Knicks&quot;,
+        &quot;tricode&quot;: &quot;NYK&quot;,
+        &quot;teamId&quot;: &quot;1610612752&quot;,
+        &quot;nickname&quot;: &quot;Knicks&quot;,
+        &quot;urlName&quot;: &quot;knicks&quot;,
+        &quot;teamShortName&quot;: &quot;New York&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Atlantic&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;New Zealand&quot;,
+        &quot;altCityName&quot;: &quot;New Zealand&quot;,
+        &quot;fullName&quot;: &quot;New Zealand Breakers&quot;,
+        &quot;tricode&quot;: &quot;NZB&quot;,
+        &quot;teamId&quot;: &quot;15020&quot;,
+        &quot;nickname&quot;: &quot;Breakers&quot;,
+        &quot;urlName&quot;: &quot;breakers&quot;,
+        &quot;teamShortName&quot;: &quot;New Zealand&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Oklahoma City&quot;,
+        &quot;altCityName&quot;: &quot;Oklahoma City&quot;,
+        &quot;fullName&quot;: &quot;Oklahoma City Thunder&quot;,
+        &quot;tricode&quot;: &quot;OKC&quot;,
+        &quot;teamId&quot;: &quot;1610612760&quot;,
+        &quot;nickname&quot;: &quot;Thunder&quot;,
+        &quot;urlName&quot;: &quot;thunder&quot;,
+        &quot;teamShortName&quot;: &quot;Oklahoma City&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Northwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Orlando&quot;,
+        &quot;altCityName&quot;: &quot;Orlando&quot;,
+        &quot;fullName&quot;: &quot;Orlando Magic&quot;,
+        &quot;tricode&quot;: &quot;ORL&quot;,
+        &quot;teamId&quot;: &quot;1610612753&quot;,
+        &quot;nickname&quot;: &quot;Magic&quot;,
+        &quot;urlName&quot;: &quot;magic&quot;,
+        &quot;teamShortName&quot;: &quot;Orlando&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Southeast&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Philadelphia&quot;,
+        &quot;altCityName&quot;: &quot;Philadelphia&quot;,
+        &quot;fullName&quot;: &quot;Philadelphia 76ers&quot;,
+        &quot;tricode&quot;: &quot;PHI&quot;,
+        &quot;teamId&quot;: &quot;1610612755&quot;,
+        &quot;nickname&quot;: &quot;76ers&quot;,
+        &quot;urlName&quot;: &quot;sixers&quot;,
+        &quot;teamShortName&quot;: &quot;Philadelphia&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Atlantic&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Phoenix&quot;,
+        &quot;altCityName&quot;: &quot;Phoenix&quot;,
+        &quot;fullName&quot;: &quot;Phoenix Suns&quot;,
+        &quot;tricode&quot;: &quot;PHX&quot;,
+        &quot;teamId&quot;: &quot;1610612756&quot;,
+        &quot;nickname&quot;: &quot;Suns&quot;,
+        &quot;urlName&quot;: &quot;suns&quot;,
+        &quot;teamShortName&quot;: &quot;Phoenix&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Pacific&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Portland&quot;,
+        &quot;altCityName&quot;: &quot;Portland&quot;,
+        &quot;fullName&quot;: &quot;Portland Trail Blazers&quot;,
+        &quot;tricode&quot;: &quot;POR&quot;,
+        &quot;teamId&quot;: &quot;1610612757&quot;,
+        &quot;nickname&quot;: &quot;Trail Blazers&quot;,
+        &quot;urlName&quot;: &quot;blazers&quot;,
+        &quot;teamShortName&quot;: &quot;Portland&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Northwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Sacramento&quot;,
+        &quot;altCityName&quot;: &quot;Sacramento&quot;,
+        &quot;fullName&quot;: &quot;Sacramento Kings&quot;,
+        &quot;tricode&quot;: &quot;SAC&quot;,
+        &quot;teamId&quot;: &quot;1610612758&quot;,
+        &quot;nickname&quot;: &quot;Kings&quot;,
+        &quot;urlName&quot;: &quot;kings&quot;,
+        &quot;teamShortName&quot;: &quot;Sacramento&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Pacific&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;San Antonio&quot;,
+        &quot;altCityName&quot;: &quot;San Antonio&quot;,
+        &quot;fullName&quot;: &quot;San Antonio Spurs&quot;,
+        &quot;tricode&quot;: &quot;SAS&quot;,
+        &quot;teamId&quot;: &quot;1610612759&quot;,
+        &quot;nickname&quot;: &quot;Spurs&quot;,
+        &quot;urlName&quot;: &quot;spurs&quot;,
+        &quot;teamShortName&quot;: &quot;San Antonio&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Southwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Shanghai&quot;,
+        &quot;altCityName&quot;: &quot;Shanghai&quot;,
+        &quot;fullName&quot;: &quot;Shanghai Sharks&quot;,
+        &quot;tricode&quot;: &quot;SDS&quot;,
+        &quot;teamId&quot;: &quot;12329&quot;,
+        &quot;nickname&quot;: &quot;Sharks&quot;,
+        &quot;urlName&quot;: &quot;shanghai_sharks&quot;,
+        &quot;teamShortName&quot;: &quot;Shanghai&quot;,
+        &quot;confName&quot;: &quot;Intl&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: true,
+        &quot;city&quot;: &quot;Team Giannis&quot;,
+        &quot;altCityName&quot;: &quot;Team Giannis&quot;,
+        &quot;fullName&quot;: &quot;Team Giannis&quot;,
+        &quot;tricode&quot;: &quot;GNS&quot;,
+        &quot;teamId&quot;: &quot;1610616833&quot;,
+        &quot;nickname&quot;: &quot;Team Giannis&quot;,
+        &quot;urlName&quot;: &quot;team_giannis&quot;,
+        &quot;teamShortName&quot;: &quot;Team Giannis&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;East&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: true,
+        &quot;city&quot;: &quot;Team LeBron&quot;,
+        &quot;altCityName&quot;: &quot;Team LeBron&quot;,
+        &quot;fullName&quot;: &quot;Team LeBron&quot;,
+        &quot;tricode&quot;: &quot;LBN&quot;,
+        &quot;teamId&quot;: &quot;1610616834&quot;,
+        &quot;nickname&quot;: &quot;Team LeBron&quot;,
+        &quot;urlName&quot;: &quot;team_lebron&quot;,
+        &quot;teamShortName&quot;: &quot;Team LeBron&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;West&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Toronto&quot;,
+        &quot;altCityName&quot;: &quot;Toronto&quot;,
+        &quot;fullName&quot;: &quot;Toronto Raptors&quot;,
+        &quot;tricode&quot;: &quot;TOR&quot;,
+        &quot;teamId&quot;: &quot;1610612761&quot;,
+        &quot;nickname&quot;: &quot;Raptors&quot;,
+        &quot;urlName&quot;: &quot;raptors&quot;,
+        &quot;teamShortName&quot;: &quot;Toronto&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Atlantic&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: true,
+        &quot;city&quot;: &quot;USA&quot;,
+        &quot;altCityName&quot;: &quot;USA&quot;,
+        &quot;fullName&quot;: &quot;USA USA&quot;,
+        &quot;tricode&quot;: &quot;USA&quot;,
+        &quot;teamId&quot;: &quot;1610616843&quot;,
+        &quot;nickname&quot;: &quot;USA&quot;,
+        &quot;urlName&quot;: &quot;usa&quot;,
+        &quot;teamShortName&quot;: &quot;USA&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;East&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Utah&quot;,
+        &quot;altCityName&quot;: &quot;Utah&quot;,
+        &quot;fullName&quot;: &quot;Utah Jazz&quot;,
+        &quot;tricode&quot;: &quot;UTA&quot;,
+        &quot;teamId&quot;: &quot;1610612762&quot;,
+        &quot;nickname&quot;: &quot;Jazz&quot;,
+        &quot;urlName&quot;: &quot;jazz&quot;,
+        &quot;teamShortName&quot;: &quot;Utah&quot;,
+        &quot;confName&quot;: &quot;West&quot;,
+        &quot;divName&quot;: &quot;Northwest&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Washington&quot;,
+        &quot;altCityName&quot;: &quot;Washington&quot;,
+        &quot;fullName&quot;: &quot;Washington Wizards&quot;,
+        &quot;tricode&quot;: &quot;WAS&quot;,
+        &quot;teamId&quot;: &quot;1610612764&quot;,
+        &quot;nickname&quot;: &quot;Wizards&quot;,
+        &quot;urlName&quot;: &quot;wizards&quot;,
+        &quot;teamShortName&quot;: &quot;Washington&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;Southeast&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: true,
+        &quot;city&quot;: &quot;World&quot;,
+        &quot;altCityName&quot;: &quot;World&quot;,
+        &quot;fullName&quot;: &quot;World World&quot;,
+        &quot;tricode&quot;: &quot;WLD&quot;,
+        &quot;teamId&quot;: &quot;1610616844&quot;,
+        &quot;nickname&quot;: &quot;World&quot;,
+        &quot;urlName&quot;: &quot;world&quot;,
+        &quot;teamShortName&quot;: &quot;World&quot;,
+        &quot;confName&quot;: &quot;East&quot;,
+        &quot;divName&quot;: &quot;East&quot;
+      }
+    ],
+    &quot;africa&quot;: [
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Team&quot;,
+        &quot;altCityName&quot;: &quot;Team&quot;,
+        &quot;fullName&quot;: &quot;Team USA&quot;,
+        &quot;tricode&quot;: &quot;USA&quot;,
+        &quot;teamId&quot;: &quot;22&quot;,
+        &quot;nickname&quot;: &quot;USA&quot;,
+        &quot;urlName&quot;: &quot;nhs_usa&quot;,
+        &quot;teamShortName&quot;: &quot;USA&quot;,
+        &quot;confName&quot;: &quot;&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Team&quot;,
+        &quot;altCityName&quot;: &quot;Team&quot;,
+        &quot;fullName&quot;: &quot;Team World&quot;,
+        &quot;tricode&quot;: &quot;WLD&quot;,
+        &quot;teamId&quot;: &quot;21&quot;,
+        &quot;nickname&quot;: &quot;World&quot;,
+        &quot;urlName&quot;: &quot;nhs_world&quot;,
+        &quot;teamShortName&quot;: &quot;World&quot;,
+        &quot;confName&quot;: &quot;&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      }
+    ],
+    &quot;sacramento&quot;: [
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Golden State&quot;,
+        &quot;altCityName&quot;: &quot;Golden State&quot;,
+        &quot;fullName&quot;: &quot;Golden State Warriors&quot;,
+        &quot;tricode&quot;: &quot;GSW&quot;,
+        &quot;teamId&quot;: &quot;1610612744&quot;,
+        &quot;nickname&quot;: &quot;Warriors&quot;,
+        &quot;urlName&quot;: &quot;warriors&quot;,
+        &quot;teamShortName&quot;: &quot;Golden State&quot;,
+        &quot;confName&quot;: &quot;Sacramento&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Los Angeles&quot;,
+        &quot;altCityName&quot;: &quot;Los Angeles Lakers&quot;,
+        &quot;fullName&quot;: &quot;Los Angeles Lakers&quot;,
+        &quot;tricode&quot;: &quot;LAL&quot;,
+        &quot;teamId&quot;: &quot;1610612747&quot;,
+        &quot;nickname&quot;: &quot;Lakers&quot;,
+        &quot;urlName&quot;: &quot;lakers&quot;,
+        &quot;teamShortName&quot;: &quot;L.A. Lakers&quot;,
+        &quot;confName&quot;: &quot;Sacramento&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Miami&quot;,
+        &quot;altCityName&quot;: &quot;Miami&quot;,
+        &quot;fullName&quot;: &quot;Miami Heat&quot;,
+        &quot;tricode&quot;: &quot;MIA&quot;,
+        &quot;teamId&quot;: &quot;1610612748&quot;,
+        &quot;nickname&quot;: &quot;Heat&quot;,
+        &quot;urlName&quot;: &quot;heat&quot;,
+        &quot;teamShortName&quot;: &quot;Miami&quot;,
+        &quot;confName&quot;: &quot;Sacramento&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Sacramento&quot;,
+        &quot;altCityName&quot;: &quot;Sacramento&quot;,
+        &quot;fullName&quot;: &quot;Sacramento Kings&quot;,
+        &quot;tricode&quot;: &quot;SAC&quot;,
+        &quot;teamId&quot;: &quot;1610612758&quot;,
+        &quot;nickname&quot;: &quot;Kings&quot;,
+        &quot;urlName&quot;: &quot;kings&quot;,
+        &quot;teamShortName&quot;: &quot;Sacramento&quot;,
+        &quot;confName&quot;: &quot;Sacramento&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      }
+    ],
+    &quot;vegas&quot;: [
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Atlanta&quot;,
+        &quot;altCityName&quot;: &quot;Atlanta&quot;,
+        &quot;fullName&quot;: &quot;Atlanta Hawks&quot;,
+        &quot;tricode&quot;: &quot;ATL&quot;,
+        &quot;teamId&quot;: &quot;1610612737&quot;,
+        &quot;nickname&quot;: &quot;Hawks&quot;,
+        &quot;urlName&quot;: &quot;hawks&quot;,
+        &quot;teamShortName&quot;: &quot;Atlanta&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Boston&quot;,
+        &quot;altCityName&quot;: &quot;Boston&quot;,
+        &quot;fullName&quot;: &quot;Boston Celtics&quot;,
+        &quot;tricode&quot;: &quot;BOS&quot;,
+        &quot;teamId&quot;: &quot;1610612738&quot;,
+        &quot;nickname&quot;: &quot;Celtics&quot;,
+        &quot;urlName&quot;: &quot;celtics&quot;,
+        &quot;teamShortName&quot;: &quot;Boston&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Brooklyn&quot;,
+        &quot;altCityName&quot;: &quot;Brooklyn&quot;,
+        &quot;fullName&quot;: &quot;Brooklyn Nets&quot;,
+        &quot;tricode&quot;: &quot;BKN&quot;,
+        &quot;teamId&quot;: &quot;1610612751&quot;,
+        &quot;nickname&quot;: &quot;Nets&quot;,
+        &quot;urlName&quot;: &quot;nets&quot;,
+        &quot;teamShortName&quot;: &quot;Brooklyn&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Charlotte&quot;,
+        &quot;altCityName&quot;: &quot;Charlotte&quot;,
+        &quot;fullName&quot;: &quot;Charlotte Hornets&quot;,
+        &quot;tricode&quot;: &quot;CHA&quot;,
+        &quot;teamId&quot;: &quot;1610612766&quot;,
+        &quot;nickname&quot;: &quot;Hornets&quot;,
+        &quot;urlName&quot;: &quot;hornets&quot;,
+        &quot;teamShortName&quot;: &quot;Charlotte&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Chicago&quot;,
+        &quot;altCityName&quot;: &quot;Chicago&quot;,
+        &quot;fullName&quot;: &quot;Chicago Bulls&quot;,
+        &quot;tricode&quot;: &quot;CHI&quot;,
+        &quot;teamId&quot;: &quot;1610612741&quot;,
+        &quot;nickname&quot;: &quot;Bulls&quot;,
+        &quot;urlName&quot;: &quot;bulls&quot;,
+        &quot;teamShortName&quot;: &quot;Chicago&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;China&quot;,
+        &quot;altCityName&quot;: &quot;China&quot;,
+        &quot;fullName&quot;: &quot;Team China&quot;,
+        &quot;tricode&quot;: &quot;CHN&quot;,
+        &quot;teamId&quot;: &quot;45&quot;,
+        &quot;nickname&quot;: &quot;China&quot;,
+        &quot;urlName&quot;: &quot;china&quot;,
+        &quot;teamShortName&quot;: &quot;China&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Cleveland&quot;,
+        &quot;altCityName&quot;: &quot;Cleveland&quot;,
+        &quot;fullName&quot;: &quot;Cleveland Cavaliers&quot;,
+        &quot;tricode&quot;: &quot;CLE&quot;,
+        &quot;teamId&quot;: &quot;1610612739&quot;,
+        &quot;nickname&quot;: &quot;Cavaliers&quot;,
+        &quot;urlName&quot;: &quot;cavaliers&quot;,
+        &quot;teamShortName&quot;: &quot;Cleveland&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: false,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Croatia&quot;,
+        &quot;altCityName&quot;: &quot;Croatia&quot;,
+        &quot;fullName&quot;: &quot;Team Croatia&quot;,
+        &quot;tricode&quot;: &quot;CRO&quot;,
+        &quot;teamId&quot;: &quot;70&quot;,
+        &quot;nickname&quot;: &quot;Croatia&quot;,
+        &quot;urlName&quot;: &quot;croatia&quot;,
+        &quot;teamShortName&quot;: &quot;Croatia&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Dallas&quot;,
+        &quot;altCityName&quot;: &quot;Dallas&quot;,
+        &quot;fullName&quot;: &quot;Dallas Mavericks&quot;,
+        &quot;tricode&quot;: &quot;DAL&quot;,
+        &quot;teamId&quot;: &quot;1610612742&quot;,
+        &quot;nickname&quot;: &quot;Mavericks&quot;,
+        &quot;urlName&quot;: &quot;mavericks&quot;,
+        &quot;teamShortName&quot;: &quot;Dallas&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Denver&quot;,
+        &quot;altCityName&quot;: &quot;Denver&quot;,
+        &quot;fullName&quot;: &quot;Denver Nuggets&quot;,
+        &quot;tricode&quot;: &quot;DEN&quot;,
+        &quot;teamId&quot;: &quot;1610612743&quot;,
+        &quot;nickname&quot;: &quot;Nuggets&quot;,
+        &quot;urlName&quot;: &quot;nuggets&quot;,
+        &quot;teamShortName&quot;: &quot;Denver&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Detroit&quot;,
+        &quot;altCityName&quot;: &quot;Detroit&quot;,
+        &quot;fullName&quot;: &quot;Detroit Pistons&quot;,
+        &quot;tricode&quot;: &quot;DET&quot;,
+        &quot;teamId&quot;: &quot;1610612765&quot;,
+        &quot;nickname&quot;: &quot;Pistons&quot;,
+        &quot;urlName&quot;: &quot;pistons&quot;,
+        &quot;teamShortName&quot;: &quot;Detroit&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Golden State&quot;,
+        &quot;altCityName&quot;: &quot;Golden State&quot;,
+        &quot;fullName&quot;: &quot;Golden State Warriors&quot;,
+        &quot;tricode&quot;: &quot;GSW&quot;,
+        &quot;teamId&quot;: &quot;1610612744&quot;,
+        &quot;nickname&quot;: &quot;Warriors&quot;,
+        &quot;urlName&quot;: &quot;warriors&quot;,
+        &quot;teamShortName&quot;: &quot;Golden State&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Houston&quot;,
+        &quot;altCityName&quot;: &quot;Houston&quot;,
+        &quot;fullName&quot;: &quot;Houston Rockets&quot;,
+        &quot;tricode&quot;: &quot;HOU&quot;,
+        &quot;teamId&quot;: &quot;1610612745&quot;,
+        &quot;nickname&quot;: &quot;Rockets&quot;,
+        &quot;urlName&quot;: &quot;rockets&quot;,
+        &quot;teamShortName&quot;: &quot;Houston&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Indiana&quot;,
+        &quot;altCityName&quot;: &quot;Indiana&quot;,
+        &quot;fullName&quot;: &quot;Indiana Pacers&quot;,
+        &quot;tricode&quot;: &quot;IND&quot;,
+        &quot;teamId&quot;: &quot;1610612754&quot;,
+        &quot;nickname&quot;: &quot;Pacers&quot;,
+        &quot;urlName&quot;: &quot;pacers&quot;,
+        &quot;teamShortName&quot;: &quot;Indiana&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;LA&quot;,
+        &quot;altCityName&quot;: &quot;LA Clippers&quot;,
+        &quot;fullName&quot;: &quot;LA Clippers&quot;,
+        &quot;tricode&quot;: &quot;LAC&quot;,
+        &quot;teamId&quot;: &quot;1610612746&quot;,
+        &quot;nickname&quot;: &quot;Clippers&quot;,
+        &quot;urlName&quot;: &quot;clippers&quot;,
+        &quot;teamShortName&quot;: &quot;LA Clippers&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Los Angeles&quot;,
+        &quot;altCityName&quot;: &quot;Los Angeles Lakers&quot;,
+        &quot;fullName&quot;: &quot;Los Angeles Lakers&quot;,
+        &quot;tricode&quot;: &quot;LAL&quot;,
+        &quot;teamId&quot;: &quot;1610612747&quot;,
+        &quot;nickname&quot;: &quot;Lakers&quot;,
+        &quot;urlName&quot;: &quot;lakers&quot;,
+        &quot;teamShortName&quot;: &quot;L.A. Lakers&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Memphis&quot;,
+        &quot;altCityName&quot;: &quot;Memphis&quot;,
+        &quot;fullName&quot;: &quot;Memphis Grizzlies&quot;,
+        &quot;tricode&quot;: &quot;MEM&quot;,
+        &quot;teamId&quot;: &quot;1610612763&quot;,
+        &quot;nickname&quot;: &quot;Grizzlies&quot;,
+        &quot;urlName&quot;: &quot;grizzlies&quot;,
+        &quot;teamShortName&quot;: &quot;Memphis&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Miami&quot;,
+        &quot;altCityName&quot;: &quot;Miami&quot;,
+        &quot;fullName&quot;: &quot;Miami Heat&quot;,
+        &quot;tricode&quot;: &quot;MIA&quot;,
+        &quot;teamId&quot;: &quot;1610612748&quot;,
+        &quot;nickname&quot;: &quot;Heat&quot;,
+        &quot;urlName&quot;: &quot;heat&quot;,
+        &quot;teamShortName&quot;: &quot;Miami&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Milwaukee&quot;,
+        &quot;altCityName&quot;: &quot;Milwaukee&quot;,
+        &quot;fullName&quot;: &quot;Milwaukee Bucks&quot;,
+        &quot;tricode&quot;: &quot;MIL&quot;,
+        &quot;teamId&quot;: &quot;1610612749&quot;,
+        &quot;nickname&quot;: &quot;Bucks&quot;,
+        &quot;urlName&quot;: &quot;bucks&quot;,
+        &quot;teamShortName&quot;: &quot;Milwaukee&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Minnesota&quot;,
+        &quot;altCityName&quot;: &quot;Minnesota&quot;,
+        &quot;fullName&quot;: &quot;Minnesota Timberwolves&quot;,
+        &quot;tricode&quot;: &quot;MIN&quot;,
+        &quot;teamId&quot;: &quot;1610612750&quot;,
+        &quot;nickname&quot;: &quot;Timberwolves&quot;,
+        &quot;urlName&quot;: &quot;timberwolves&quot;,
+        &quot;teamShortName&quot;: &quot;Minnesota&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;New Orleans&quot;,
+        &quot;altCityName&quot;: &quot;New Orleans&quot;,
+        &quot;fullName&quot;: &quot;New Orleans Pelicans&quot;,
+        &quot;tricode&quot;: &quot;NOP&quot;,
+        &quot;teamId&quot;: &quot;1610612740&quot;,
+        &quot;nickname&quot;: &quot;Pelicans&quot;,
+        &quot;urlName&quot;: &quot;pelicans&quot;,
+        &quot;teamShortName&quot;: &quot;New Orleans&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;New York&quot;,
+        &quot;altCityName&quot;: &quot;New York&quot;,
+        &quot;fullName&quot;: &quot;New York Knicks&quot;,
+        &quot;tricode&quot;: &quot;NYK&quot;,
+        &quot;teamId&quot;: &quot;1610612752&quot;,
+        &quot;nickname&quot;: &quot;Knicks&quot;,
+        &quot;urlName&quot;: &quot;knicks&quot;,
+        &quot;teamShortName&quot;: &quot;New York&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Oklahoma City&quot;,
+        &quot;altCityName&quot;: &quot;Oklahoma City&quot;,
+        &quot;fullName&quot;: &quot;Oklahoma City Thunder&quot;,
+        &quot;tricode&quot;: &quot;OKC&quot;,
+        &quot;teamId&quot;: &quot;1610612760&quot;,
+        &quot;nickname&quot;: &quot;Thunder&quot;,
+        &quot;urlName&quot;: &quot;thunder&quot;,
+        &quot;teamShortName&quot;: &quot;Oklahoma City&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Orlando&quot;,
+        &quot;altCityName&quot;: &quot;Orlando&quot;,
+        &quot;fullName&quot;: &quot;Orlando Magic&quot;,
+        &quot;tricode&quot;: &quot;ORL&quot;,
+        &quot;teamId&quot;: &quot;1610612753&quot;,
+        &quot;nickname&quot;: &quot;Magic&quot;,
+        &quot;urlName&quot;: &quot;magic&quot;,
+        &quot;teamShortName&quot;: &quot;Orlando&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Philadelphia&quot;,
+        &quot;altCityName&quot;: &quot;Philadelphia&quot;,
+        &quot;fullName&quot;: &quot;Philadelphia 76ers&quot;,
+        &quot;tricode&quot;: &quot;PHI&quot;,
+        &quot;teamId&quot;: &quot;1610612755&quot;,
+        &quot;nickname&quot;: &quot;76ers&quot;,
+        &quot;urlName&quot;: &quot;sixers&quot;,
+        &quot;teamShortName&quot;: &quot;Philadelphia&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Phoenix&quot;,
+        &quot;altCityName&quot;: &quot;Phoenix&quot;,
+        &quot;fullName&quot;: &quot;Phoenix Suns&quot;,
+        &quot;tricode&quot;: &quot;PHX&quot;,
+        &quot;teamId&quot;: &quot;1610612756&quot;,
+        &quot;nickname&quot;: &quot;Suns&quot;,
+        &quot;urlName&quot;: &quot;suns&quot;,
+        &quot;teamShortName&quot;: &quot;Phoenix&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Portland&quot;,
+        &quot;altCityName&quot;: &quot;Portland&quot;,
+        &quot;fullName&quot;: &quot;Portland Trail Blazers&quot;,
+        &quot;tricode&quot;: &quot;POR&quot;,
+        &quot;teamId&quot;: &quot;1610612757&quot;,
+        &quot;nickname&quot;: &quot;Trail Blazers&quot;,
+        &quot;urlName&quot;: &quot;blazers&quot;,
+        &quot;teamShortName&quot;: &quot;Portland&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Sacramento&quot;,
+        &quot;altCityName&quot;: &quot;Sacramento&quot;,
+        &quot;fullName&quot;: &quot;Sacramento Kings&quot;,
+        &quot;tricode&quot;: &quot;SAC&quot;,
+        &quot;teamId&quot;: &quot;1610612758&quot;,
+        &quot;nickname&quot;: &quot;Kings&quot;,
+        &quot;urlName&quot;: &quot;kings&quot;,
+        &quot;teamShortName&quot;: &quot;Sacramento&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;San Antonio&quot;,
+        &quot;altCityName&quot;: &quot;San Antonio&quot;,
+        &quot;fullName&quot;: &quot;San Antonio Spurs&quot;,
+        &quot;tricode&quot;: &quot;SAS&quot;,
+        &quot;teamId&quot;: &quot;1610612759&quot;,
+        &quot;nickname&quot;: &quot;Spurs&quot;,
+        &quot;urlName&quot;: &quot;spurs&quot;,
+        &quot;teamShortName&quot;: &quot;San Antonio&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Toronto&quot;,
+        &quot;altCityName&quot;: &quot;Toronto&quot;,
+        &quot;fullName&quot;: &quot;Toronto Raptors&quot;,
+        &quot;tricode&quot;: &quot;TOR&quot;,
+        &quot;teamId&quot;: &quot;1610612761&quot;,
+        &quot;nickname&quot;: &quot;Raptors&quot;,
+        &quot;urlName&quot;: &quot;raptors&quot;,
+        &quot;teamShortName&quot;: &quot;Toronto&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Utah&quot;,
+        &quot;altCityName&quot;: &quot;Utah&quot;,
+        &quot;fullName&quot;: &quot;Utah Jazz&quot;,
+        &quot;tricode&quot;: &quot;UTA&quot;,
+        &quot;teamId&quot;: &quot;1610612762&quot;,
+        &quot;nickname&quot;: &quot;Jazz&quot;,
+        &quot;urlName&quot;: &quot;jazz&quot;,
+        &quot;teamShortName&quot;: &quot;Utah&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Washington&quot;,
+        &quot;altCityName&quot;: &quot;Washington&quot;,
+        &quot;fullName&quot;: &quot;Washington Wizards&quot;,
+        &quot;tricode&quot;: &quot;WAS&quot;,
+        &quot;teamId&quot;: &quot;1610612764&quot;,
+        &quot;nickname&quot;: &quot;Wizards&quot;,
+        &quot;urlName&quot;: &quot;wizards&quot;,
+        &quot;teamShortName&quot;: &quot;Washington&quot;,
+        &quot;confName&quot;: &quot;summer&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      }
+    ],
+    &quot;utah&quot;: [
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Cleveland&quot;,
+        &quot;altCityName&quot;: &quot;Cleveland&quot;,
+        &quot;fullName&quot;: &quot;Cleveland Cavaliers&quot;,
+        &quot;tricode&quot;: &quot;CLE&quot;,
+        &quot;teamId&quot;: &quot;1610612739&quot;,
+        &quot;nickname&quot;: &quot;Cavaliers&quot;,
+        &quot;urlName&quot;: &quot;cavaliers&quot;,
+        &quot;teamShortName&quot;: &quot;Cleveland&quot;,
+        &quot;confName&quot;: &quot;Utah&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Memphis&quot;,
+        &quot;altCityName&quot;: &quot;Memphis&quot;,
+        &quot;fullName&quot;: &quot;Memphis Grizzlies&quot;,
+        &quot;tricode&quot;: &quot;MEM&quot;,
+        &quot;teamId&quot;: &quot;1610612763&quot;,
+        &quot;nickname&quot;: &quot;Grizzlies&quot;,
+        &quot;urlName&quot;: &quot;grizzlies&quot;,
+        &quot;teamShortName&quot;: &quot;Memphis&quot;,
+        &quot;confName&quot;: &quot;Utah&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;San Antonio&quot;,
+        &quot;altCityName&quot;: &quot;San Antonio&quot;,
+        &quot;fullName&quot;: &quot;San Antonio Spurs&quot;,
+        &quot;tricode&quot;: &quot;SAS&quot;,
+        &quot;teamId&quot;: &quot;1610612759&quot;,
+        &quot;nickname&quot;: &quot;Spurs&quot;,
+        &quot;urlName&quot;: &quot;spurs&quot;,
+        &quot;teamShortName&quot;: &quot;San Antonio&quot;,
+        &quot;confName&quot;: &quot;Utah&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      },
+      {
+        &quot;isNBAFranchise&quot;: true,
+        &quot;isAllStar&quot;: false,
+        &quot;city&quot;: &quot;Utah&quot;,
+        &quot;altCityName&quot;: &quot;Utah&quot;,
+        &quot;fullName&quot;: &quot;Utah Jazz&quot;,
+        &quot;tricode&quot;: &quot;UTA&quot;,
+        &quot;teamId&quot;: &quot;1610612762&quot;,
+        &quot;nickname&quot;: &quot;Jazz&quot;,
+        &quot;urlName&quot;: &quot;jazz&quot;,
+        &quot;teamShortName&quot;: &quot;Utah&quot;,
+        &quot;confName&quot;: &quot;Utah&quot;,
+        &quot;divName&quot;: &quot;&quot;
+      }
+    ]
+  }
+}
 </pre>
 </span>
 </div>
@@ -207,7 +1329,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Apr 21, 2020, 1:12:38 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Apr 24, 2020, 1:28:04 AM</p>
 </div>
 </div>
 </body>

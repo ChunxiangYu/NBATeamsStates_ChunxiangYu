@@ -1,105 +1,1226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.bsu.cs222.model.URLCreatorTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-04-21T17:12:37" hostname="LAPTOP-MB96NKHH" time="0.236">
+<testsuite name="edu.bsu.cs222.model.URLCreatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-24T05:28:03" hostname="LAPTOP-MB96NKHH" time="0.593">
   <properties/>
-  <testcase name="testGetTeamStatsUrl()" classname="edu.bsu.cs222.model.URLCreatorTest" time="0.236">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
-	at edu.bsu.cs222.model.URLCreatorTest.testGetTeamStatsUrl(URLCreatorTest.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:102)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:82)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:78)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
-  <system-out><![CDATA[19538
-{"_internal":{"pubDateTime":"2020-04-16 02:59:09.943 EDT","igorPath":"S3,1587020346743,1587020349165|router,1587020349165,1587020349201|domUpdater,1587020349294,1587020349813|feedProducer,1587020349880,1587020351010","xslt":"NBA/xsl/league/standings/marty_all_standings.xsl","xsltForceRecompile":"true","xsltInCache":"false","xsltCompileTimeMillis":"35","xsltTransformTimeMillis":"299","consolidatedDomKey":"prod__transform__marty_standings_all__4338502768810","endToEndTimeMillis":"4267"},"league":{"standard":{"seasonYear":2019,"seasonStageId":2,"teams":[{"teamId":"1610612749","win":"53","loss":"12","winPct":".815","winPctV2":"81.5","lossPct":".185","lossPctV2":"18.5","gamesBehind":"0.0","divGamesBehind":"0.0","clinchedPlayoffsCode":"P","clinchedPlayoffsCodeV2":"x","confRank":"1","confWin":"34","confLoss":"5","divWin":"13","divLoss":"1","homeWin":"28","homeLoss":"3","awayWin":"25","awayLoss":"9","lastTenWin":"6","lastTenLoss":"4","streak":"3","divRank":"1","isWinStreak":false,"teamSitesOnly":{"teamKey":"Milwaukee","teamName":"Milwaukee","teamCode":"bucks","teamNickname":"Bucks","teamTricode":"MIL","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"1","streakText":"L 3"},"tieBreakerPts":"","sortKey":{"defaultOrder":1,"nickname":2,"win":1,"loss":30,"winPct":1,"gamesBehind":29,"confWinLoss":1,"divWinLoss":1,"homeWinLoss":2,"awayWinLoss":2,"lastTenWinLoss":6,"streak":28}},{"teamId":"1610612747","win":"49","loss":"14","winPct":".778","winPctV2":"77.8","lossPct":".222","lossPctV2":"22.2","gamesBehind":"0.0","divGamesBehind":"0.0","clinchedPlayoffsCode":"P","clinchedPlayoffsCodeV2":"x","confRank":"1","confWin":"33","confLoss":"7","divWin":"9","divLoss":"2","homeWin":"23","homeLoss":"8","awayWin":"26","awayLoss":"6","lastTenWin":"8","lastTenLoss":"2","streak":"1","divRank":"1","isWinStreak":false,"teamSitesOnly":{"teamKey":"Los Angeles","teamName":"Los Angeles","teamCode":"lakers","teamNickname":"Lakers","teamTricode":"LAL","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"1","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":2,"nickname":14,"win":2,"loss":29,"winPct":2,"gamesBehind":30,"confWinLoss":2,"divWinLoss":6,"homeWinLoss":6,"awayWinLoss":1,"lastTenWinLoss":1,"streak":23}},{"teamId":"1610612761","win":"46","loss":"18","winPct":".719","winPctV2":"71.9","lossPct":".281","lossPctV2":"28.1","gamesBehind":"6.5","divGamesBehind":"0.0","clinchedPlayoffsCode":"P","clinchedPlayoffsCodeV2":"x","confRank":"2","confWin":"30","confLoss":"10","divWin":"8","divLoss":"4","homeWin":"23","homeLoss":"9","awayWin":"23","awayLoss":"9","lastTenWin":"6","lastTenLoss":"4","streak":"4","divRank":"1","isWinStreak":true,"teamSitesOnly":{"teamKey":"Toronto","teamName":"Toronto","teamCode":"raptors","teamNickname":"Raptors","teamTricode":"TOR","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"1","streakText":"W 4"},"tieBreakerPts":"","sortKey":{"defaultOrder":3,"nickname":22,"win":3,"loss":28,"winPct":3,"gamesBehind":27,"confWinLoss":3,"divWinLoss":9,"homeWinLoss":8,"awayWinLoss":3,"lastTenWinLoss":10,"streak":1}},{"teamId":"1610612746","win":"44","loss":"20","winPct":".688","winPctV2":"68.8","lossPct":".312","lossPctV2":"31.2","gamesBehind":"5.5","divGamesBehind":"5.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"2","confWin":"27","confLoss":"14","divWin":"8","divLoss":"4","homeWin":"25","homeLoss":"7","awayWin":"19","awayLoss":"13","lastTenWin":"7","lastTenLoss":"3","streak":"1","divRank":"2","isWinStreak":true,"teamSitesOnly":{"teamKey":"LA","teamName":"LA","teamCode":"clippers","teamNickname":"Clippers","teamTricode":"LAC","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":4,"nickname":6,"win":4,"loss":27,"winPct":4,"gamesBehind":28,"confWinLoss":6,"divWinLoss":8,"homeWinLoss":4,"awayWinLoss":8,"lastTenWinLoss":3,"streak":9}},{"teamId":"1610612738","win":"43","loss":"21","winPct":".672","winPctV2":"67.2","lossPct":".328","lossPctV2":"32.8","gamesBehind":"9.5","divGamesBehind":"3.0","clinchedPlayoffsCode":"P","clinchedPlayoffsCodeV2":"x","confRank":"3","confWin":"27","confLoss":"10","divWin":"7","divLoss":"6","homeWin":"23","homeLoss":"9","awayWin":"20","awayLoss":"12","lastTenWin":"5","lastTenLoss":"5","streak":"1","divRank":"2","isWinStreak":true,"teamSitesOnly":{"teamKey":"Boston","teamName":"Boston","teamCode":"celtics","teamNickname":"Celtics","teamTricode":"BOS","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"1","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":5,"nickname":5,"win":5,"loss":26,"winPct":5,"gamesBehind":22,"confWinLoss":5,"divWinLoss":14,"homeWinLoss":7,"awayWinLoss":6,"lastTenWinLoss":13,"streak":8}},{"teamId":"1610612743","win":"43","loss":"22","winPct":".662","winPctV2":"66.2","lossPct":".338","lossPctV2":"33.8","gamesBehind":"7.0","divGamesBehind":"0.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"3","confWin":"26","confLoss":"13","divWin":"10","divLoss":"1","homeWin":"25","homeLoss":"8","awayWin":"18","awayLoss":"14","lastTenWin":"5","lastTenLoss":"5","streak":"1","divRank":"1","isWinStreak":false,"teamSitesOnly":{"teamKey":"Denver","teamName":"Denver","teamCode":"nuggets","teamNickname":"Nuggets","teamTricode":"DEN","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":6,"nickname":18,"win":6,"loss":25,"winPct":6,"gamesBehind":26,"confWinLoss":7,"divWinLoss":3,"homeWinLoss":5,"awayWinLoss":9,"lastTenWinLoss":16,"streak":24}},{"teamId":"1610612762","win":"41","loss":"23","winPct":".641","winPctV2":"64.1","lossPct":".359","lossPctV2":"35.9","gamesBehind":"8.5","divGamesBehind":"1.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"4","confWin":"21","confLoss":"16","divWin":"5","divLoss":"5","homeWin":"21","homeLoss":"10","awayWin":"20","awayLoss":"13","lastTenWin":"5","lastTenLoss":"5","streak":"1","divRank":"2","isWinStreak":false,"teamSitesOnly":{"teamKey":"Utah","teamName":"Utah","teamCode":"jazz","teamNickname":"Jazz","teamTricode":"UTA","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":7,"nickname":11,"win":8,"loss":24,"winPct":7,"gamesBehind":25,"confWinLoss":13,"divWinLoss":18,"homeWinLoss":10,"awayWinLoss":7,"lastTenWinLoss":14,"streak":21}},{"teamId":"1610612748","win":"41","loss":"24","winPct":".631","winPctV2":"63.1","lossPct":".369","lossPctV2":"36.9","gamesBehind":"12.0","divGamesBehind":"0.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"4","confWin":"28","confLoss":"10","divWin":"10","divLoss":"4","homeWin":"27","homeLoss":"5","awayWin":"14","awayLoss":"19","lastTenWin":"6","lastTenLoss":"4","streak":"1","divRank":"1","isWinStreak":false,"teamSitesOnly":{"teamKey":"Miami","teamName":"Miami","teamCode":"heat","teamNickname":"Heat","teamTricode":"MIA","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":8,"nickname":9,"win":7,"loss":21,"winPct":8,"gamesBehind":20,"confWinLoss":4,"divWinLoss":5,"homeWinLoss":3,"awayWinLoss":14,"lastTenWinLoss":7,"streak":20}},{"teamId":"1610612745","win":"40","loss":"24","winPct":".625","winPctV2":"62.5","lossPct":".375","lossPctV2":"37.5","gamesBehind":"9.5","divGamesBehind":"0.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"6","confWin":"25","confLoss":"17","divWin":"7","divLoss":"4","homeWin":"22","homeLoss":"10","awayWin":"18","awayLoss":"14","lastTenWin":"6","lastTenLoss":"4","streak":"1","divRank":"1","isWinStreak":true,"teamSitesOnly":{"teamKey":"Houston","teamName":"Houston","teamCode":"rockets","teamNickname":"Rockets","teamTricode":"HOU","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":9,"nickname":23,"win":10,"loss":22,"winPct":9,"gamesBehind":23,"confWinLoss":11,"divWinLoss":11,"homeWinLoss":9,"awayWinLoss":10,"lastTenWinLoss":11,"streak":13}},{"teamId":"1610612760","win":"40","loss":"24","winPct":".625","winPctV2":"62.5","lossPct":".375","lossPctV2":"37.5","gamesBehind":"9.5","divGamesBehind":"2.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"5","confWin":"25","confLoss":"15","divWin":"7","divLoss":"4","homeWin":"20","homeLoss":"13","awayWin":"20","awayLoss":"11","lastTenWin":"8","lastTenLoss":"2","streak":"3","divRank":"3","isWinStreak":true,"teamSitesOnly":{"teamKey":"Oklahoma City","teamName":"Oklahoma City","teamCode":"thunder","teamNickname":"Thunder","teamTricode":"OKC","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 3"},"tieBreakerPts":"","sortKey":{"defaultOrder":10,"nickname":26,"win":11,"loss":23,"winPct":10,"gamesBehind":24,"confWinLoss":10,"divWinLoss":12,"homeWinLoss":12,"awayWinLoss":5,"lastTenWinLoss":2,"streak":4}},{"teamId":"1610612754","win":"39","loss":"26","winPct":".600","winPctV2":"60","lossPct":".400","lossPctV2":"40","gamesBehind":"14.0","divGamesBehind":"14.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"5","confWin":"24","confLoss":"18","divWin":"8","divLoss":"7","homeWin":"21","homeLoss":"11","awayWin":"18","awayLoss":"15","lastTenWin":"7","lastTenLoss":"3","streak":"1","divRank":"2","isWinStreak":false,"teamSitesOnly":{"teamKey":"Indiana","teamName":"Indiana","teamCode":"pacers","teamNickname":"Pacers","teamTricode":"IND","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":11,"nickname":19,"win":13,"loss":20,"winPct":12,"gamesBehind":19,"confWinLoss":12,"divWinLoss":10,"homeWinLoss":11,"awayWinLoss":11,"lastTenWinLoss":5,"streak":25}},{"teamId":"1610612755","win":"39","loss":"26","winPct":".600","winPctV2":"60","lossPct":".400","lossPctV2":"40","gamesBehind":"14.0","divGamesBehind":"7.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"6","confWin":"26","confLoss":"16","divWin":"11","divLoss":"4","homeWin":"29","homeLoss":"2","awayWin":"10","awayLoss":"24","lastTenWin":"5","lastTenLoss":"5","streak":"1","divRank":"3","isWinStreak":true,"teamSitesOnly":{"teamKey":"Philadelphia","teamName":"Philadelphia","teamCode":"sixers","teamNickname":"76ers","teamTricode":"PHI","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":12,"nickname":1,"win":12,"loss":19,"winPct":11,"gamesBehind":18,"confWinLoss":8,"divWinLoss":2,"homeWinLoss":1,"awayWinLoss":24,"lastTenWinLoss":12,"streak":6}},{"teamId":"1610612742","win":"40","loss":"27","winPct":".597","winPctV2":"59.7","lossPct":".403","lossPctV2":"40.3","gamesBehind":"11.0","divGamesBehind":"1.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"7","confWin":"25","confLoss":"15","divWin":"10","divLoss":"3","homeWin":"19","homeLoss":"15","awayWin":"21","awayLoss":"12","lastTenWin":"6","lastTenLoss":"4","streak":"1","divRank":"2","isWinStreak":true,"teamSitesOnly":{"teamKey":"Dallas","teamName":"Dallas","teamCode":"mavericks","teamNickname":"Mavericks","teamTricode":"DAL","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":13,"nickname":16,"win":9,"loss":18,"winPct":13,"gamesBehind":21,"confWinLoss":9,"divWinLoss":4,"homeWinLoss":13,"awayWinLoss":4,"lastTenWinLoss":9,"streak":12}},{"teamId":"1610612763","win":"32","loss":"33","winPct":".492","winPctV2":"49.2","lossPct":".508","lossPctV2":"50.8","gamesBehind":"18.0","divGamesBehind":"8.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"8","confWin":"19","confLoss":"22","divWin":"4","divLoss":"7","homeWin":"18","homeLoss":"15","awayWin":"14","awayLoss":"18","lastTenWin":"4","lastTenLoss":"6","streak":"1","divRank":"3","isWinStreak":false,"teamSitesOnly":{"teamKey":"Memphis","teamName":"Memphis","teamCode":"grizzlies","teamNickname":"Grizzlies","teamTricode":"MEM","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":14,"nickname":7,"win":14,"loss":17,"winPct":14,"gamesBehind":17,"confWinLoss":17,"divWinLoss":23,"homeWinLoss":16,"awayWinLoss":13,"lastTenWinLoss":20,"streak":18}},{"teamId":"1610612751","win":"30","loss":"34","winPct":".469","winPctV2":"46.9","lossPct":".531","lossPctV2":"53.1","gamesBehind":"22.5","divGamesBehind":"16.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"7","confWin":"20","confLoss":"21","divWin":"6","divLoss":"9","homeWin":"18","homeLoss":"14","awayWin":"12","awayLoss":"20","lastTenWin":"5","lastTenLoss":"5","streak":"3","divRank":"4","isWinStreak":true,"teamSitesOnly":{"teamKey":"Brooklyn","teamName":"Brooklyn","teamCode":"nets","teamNickname":"Nets","teamTricode":"BKN","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 3"},"tieBreakerPts":"","sortKey":{"defaultOrder":15,"nickname":17,"win":16,"loss":16,"winPct":15,"gamesBehind":12,"confWinLoss":15,"divWinLoss":17,"homeWinLoss":14,"awayWinLoss":19,"lastTenWinLoss":15,"streak":3}},{"teamId":"1610612753","win":"30","loss":"35","winPct":".462","winPctV2":"46.2","lossPct":".538","lossPctV2":"53.8","gamesBehind":"23.0","divGamesBehind":"11.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"8","confWin":"19","confLoss":"18","divWin":"9","divLoss":"5","homeWin":"16","homeLoss":"15","awayWin":"14","awayLoss":"20","lastTenWin":"6","lastTenLoss":"4","streak":"3","divRank":"2","isWinStreak":true,"teamSitesOnly":{"teamKey":"Orlando","teamName":"Orlando","teamCode":"magic","teamNickname":"Magic","teamTricode":"ORL","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 3"},"tieBreakerPts":"","sortKey":{"defaultOrder":16,"nickname":15,"win":15,"loss":15,"winPct":16,"gamesBehind":11,"confWinLoss":16,"divWinLoss":7,"homeWinLoss":18,"awayWinLoss":16,"lastTenWinLoss":8,"streak":2}},{"teamId":"1610612757","win":"29","loss":"37","winPct":".439","winPctV2":"43.9","lossPct":".561","lossPctV2":"56.1","gamesBehind":"21.5","divGamesBehind":"14.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"9","confWin":"16","confLoss":"26","divWin":"4","divLoss":"8","homeWin":"18","homeLoss":"14","awayWin":"11","awayLoss":"23","lastTenWin":"4","lastTenLoss":"6","streak":"1","divRank":"4","isWinStreak":true,"teamSitesOnly":{"teamKey":"Portland","teamName":"Portland","teamCode":"blazers","teamNickname":"Trail Blazers","teamTricode":"POR","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":17,"nickname":28,"win":17,"loss":11,"winPct":17,"gamesBehind":16,"confWinLoss":21,"divWinLoss":24,"homeWinLoss":15,"awayWinLoss":22,"lastTenWinLoss":25,"streak":15}},{"teamId":"1610612740","win":"28","loss":"36","winPct":".438","winPctV2":"43.8","lossPct":".562","lossPctV2":"56.2","gamesBehind":"21.5","divGamesBehind":"12.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"10","confWin":"17","confLoss":"25","divWin":"3","divLoss":"8","homeWin":"13","homeLoss":"19","awayWin":"15","awayLoss":"17","lastTenWin":"5","lastTenLoss":"5","streak":"2","divRank":"4","isWinStreak":true,"teamSitesOnly":{"teamKey":"New Orleans","teamName":"New Orleans","teamCode":"pelicans","teamNickname":"Pelicans","teamTricode":"NOP","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 2"},"tieBreakerPts":"","sortKey":{"defaultOrder":18,"nickname":20,"win":19,"loss":13,"winPct":19,"gamesBehind":15,"confWinLoss":19,"divWinLoss":26,"homeWinLoss":23,"awayWinLoss":12,"lastTenWinLoss":17,"streak":5}},{"teamId":"1610612758","win":"28","loss":"36","winPct":".438","winPctV2":"43.8","lossPct":".562","lossPctV2":"56.2","gamesBehind":"21.5","divGamesBehind":"21.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"11","confWin":"20","confLoss":"20","divWin":"7","divLoss":"5","homeWin":"14","homeLoss":"17","awayWin":"14","awayLoss":"19","lastTenWin":"7","lastTenLoss":"3","streak":"1","divRank":"3","isWinStreak":false,"teamSitesOnly":{"teamKey":"Sacramento","teamName":"Sacramento","teamCode":"kings","teamNickname":"Kings","teamTricode":"SAC","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":19,"nickname":12,"win":18,"loss":12,"winPct":18,"gamesBehind":14,"confWinLoss":14,"divWinLoss":13,"homeWinLoss":20,"awayWinLoss":15,"lastTenWinLoss":4,"streak":22}},{"teamId":"1610612759","win":"27","loss":"36","winPct":".429","winPctV2":"42.9","lossPct":".571","lossPctV2":"57.1","gamesBehind":"22.0","divGamesBehind":"12.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"12","confWin":"15","confLoss":"21","divWin":"4","divLoss":"6","homeWin":"16","homeLoss":"14","awayWin":"11","awayLoss":"22","lastTenWin":"5","lastTenLoss":"5","streak":"1","divRank":"5","isWinStreak":true,"teamSitesOnly":{"teamKey":"San Antonio","teamName":"San Antonio","teamCode":"spurs","teamNickname":"Spurs","teamTricode":"SAS","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":20,"nickname":24,"win":20,"loss":14,"winPct":20,"gamesBehind":13,"confWinLoss":22,"divWinLoss":22,"homeWinLoss":17,"awayWinLoss":21,"lastTenWinLoss":18,"streak":14}},{"teamId":"1610612756","win":"26","loss":"39","winPct":".400","winPctV2":"40","lossPct":".600","lossPctV2":"60","gamesBehind":"24.0","divGamesBehind":"24.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"13","confWin":"15","confLoss":"27","divWin":"5","divLoss":"9","homeWin":"13","homeLoss":"22","awayWin":"13","awayLoss":"17","lastTenWin":"4","lastTenLoss":"6","streak":"1","divRank":"4","isWinStreak":false,"teamSitesOnly":{"teamKey":"Phoenix","teamName":"Phoenix","teamCode":"suns","teamNickname":"Suns","teamTricode":"PHX","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"L 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":21,"nickname":25,"win":21,"loss":10,"winPct":21,"gamesBehind":10,"confWinLoss":23,"divWinLoss":19,"homeWinLoss":24,"awayWinLoss":17,"lastTenWinLoss":24,"streak":26}},{"teamId":"1610612764","win":"24","loss":"40","winPct":".375","winPctV2":"37.5","lossPct":".625","lossPctV2":"62.5","gamesBehind":"28.5","divGamesBehind":"16.5","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":"9","confWin":"17","confLoss":"23","divWin":"5","divLoss":"9","homeWin":"16","homeLoss":"16","awayWin":"8","awayLoss":"24","lastTenWin":"4","lastTenLoss":"6","streak":"1","divRank":"3","isWinStreak":true,"teamSitesOnly":{"teamKey":"Washington","teamName":"Washington","teamCode":"wizards","teamNickname":"Wizards","teamTricode":"WAS","clinchedConference":"0","clinchedDivision":"0","clinchedPlayoffs":"0","streakText":"W 1"},"tieBreakerPts":"","sortKey":{"defaultOrder":22,"nickname":30,"win":22,"loss":9,"winPct":22,"gamesBehind":9,"confWinLoss":18,"divWinLoss":20,"homeWinLoss":19,"awayWinLoss":28,"lastTenWinLoss":26,"streak":16}},{"teamId":"1610612766","win":"23","loss":"42","winPct":".354","winPctV2":"35.4","lossPct":".646","lossPctV2":"64.6","gamesBehind":"30.0","divGamesBehind":"18.0","clinchedPlayoffsCode":"","clinchedPlayoffsCodeV2":"","confRank":
+  <testcase name="testGetTeamStatsUrlStream()" classname="edu.bsu.cs222.model.URLCreatorTest" time="0.459"/>
+  <testcase name="testGetTeamListUrlStream()" classname="edu.bsu.cs222.model.URLCreatorTest" time="0.083"/>
+  <testcase name="testGetTeamListUrl()" classname="edu.bsu.cs222.model.URLCreatorTest" time="0.023"/>
+  <testcase name="testReadJsonFile()" classname="edu.bsu.cs222.model.URLCreatorTest" time="0.026"/>
+  <system-out><![CDATA[
+{
+  "_internal": {
+    "pubDateTime": "2020-04-15 06:00:29.179 EDT",
+    "igorPath": "cron,1586944825471,1586944825471|router,1586944825471,1586944825743|domUpdater,1586944825887,1586944827323|feedProducer,1586944827416,1586944829581",
+    "xslt": "NBA/xsl/league/roster/marty_teams_list.xsl",
+    "xsltForceRecompile": "true",
+    "xsltInCache": "false",
+    "xsltCompileTimeMillis": "1405",
+    "xsltTransformTimeMillis": "451",
+    "consolidatedDomKey": "prod__transform__marty_teams_list__4788914666988",
+    "endToEndTimeMillis": "4110"
+  },
+  "league": {
+    "standard": [
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Adelaide",
+        "altCityName": "Adelaide",
+        "fullName": "Adelaide 36ers",
+        "tricode": "ADL",
+        "teamId": "15019",
+        "nickname": "36ers",
+        "urlName": "36ers",
+        "teamShortName": "Adelaide",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Atlanta",
+        "altCityName": "Atlanta",
+        "fullName": "Atlanta Hawks",
+        "tricode": "ATL",
+        "teamId": "1610612737",
+        "nickname": "Hawks",
+        "urlName": "hawks",
+        "teamShortName": "Atlanta",
+        "confName": "East",
+        "divName": "Southeast"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": true,
+        "city": "Away",
+        "altCityName": "Away",
+        "fullName": "Away Team Wilbon",
+        "tricode": "WLB",
+        "teamId": "1610616840",
+        "nickname": "Team Wilbon",
+        "urlName": "team_wilbon",
+        "teamShortName": "Team Wilbon",
+        "confName": "East",
+        "divName": "East"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Boston",
+        "altCityName": "Boston",
+        "fullName": "Boston Celtics",
+        "tricode": "BOS",
+        "teamId": "1610612738",
+        "nickname": "Celtics",
+        "urlName": "celtics",
+        "teamShortName": "Boston",
+        "confName": "East",
+        "divName": "Atlantic"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Brooklyn",
+        "altCityName": "Brooklyn",
+        "fullName": "Brooklyn Nets",
+        "tricode": "BKN",
+        "teamId": "1610612751",
+        "nickname": "Nets",
+        "urlName": "nets",
+        "teamShortName": "Brooklyn",
+        "confName": "East",
+        "divName": "Atlantic"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Buenos Aires",
+        "altCityName": "Buenos Aires",
+        "fullName": "Buenos Aires San Lorenzo",
+        "tricode": "SLA",
+        "teamId": "12330",
+        "nickname": "San Lorenzo",
+        "urlName": "san_lorenzo",
+        "teamShortName": "San Lorenzo",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Charlotte",
+        "altCityName": "Charlotte",
+        "fullName": "Charlotte Hornets",
+        "tricode": "CHA",
+        "teamId": "1610612766",
+        "nickname": "Hornets",
+        "urlName": "hornets",
+        "teamShortName": "Charlotte",
+        "confName": "East",
+        "divName": "Southeast"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Chicago",
+        "altCityName": "Chicago",
+        "fullName": "Chicago Bulls",
+        "tricode": "CHI",
+        "teamId": "1610612741",
+        "nickname": "Bulls",
+        "urlName": "bulls",
+        "teamShortName": "Chicago",
+        "confName": "East",
+        "divName": "Central"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Cleveland",
+        "altCityName": "Cleveland",
+        "fullName": "Cleveland Cavaliers",
+        "tricode": "CLE",
+        "teamId": "1610612739",
+        "nickname": "Cavaliers",
+        "urlName": "cavaliers",
+        "teamShortName": "Cleveland",
+        "confName": "East",
+        "divName": "Central"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Dallas",
+        "altCityName": "Dallas",
+        "fullName": "Dallas Mavericks",
+        "tricode": "DAL",
+        "teamId": "1610612742",
+        "nickname": "Mavericks",
+        "urlName": "mavericks",
+        "teamShortName": "Dallas",
+        "confName": "West",
+        "divName": "Southwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Denver",
+        "altCityName": "Denver",
+        "fullName": "Denver Nuggets",
+        "tricode": "DEN",
+        "teamId": "1610612743",
+        "nickname": "Nuggets",
+        "urlName": "nuggets",
+        "teamShortName": "Denver",
+        "confName": "West",
+        "divName": "Northwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Detroit",
+        "altCityName": "Detroit",
+        "fullName": "Detroit Pistons",
+        "tricode": "DET",
+        "teamId": "1610612765",
+        "nickname": "Pistons",
+        "urlName": "pistons",
+        "teamShortName": "Detroit",
+        "confName": "East",
+        "divName": "Central"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Franca",
+        "altCityName": "Franca",
+        "fullName": "Franca Franca",
+        "tricode": "FRA",
+        "teamId": "12332",
+        "nickname": "Franca",
+        "urlName": "franca",
+        "teamShortName": "SESI/Franca",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Golden State",
+        "altCityName": "Golden State",
+        "fullName": "Golden State Warriors",
+        "tricode": "GSW",
+        "teamId": "1610612744",
+        "nickname": "Warriors",
+        "urlName": "warriors",
+        "teamShortName": "Golden State",
+        "confName": "West",
+        "divName": "Pacific"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Guangzhou",
+        "altCityName": "Guangzhou",
+        "fullName": "Guangzhou Long-Lions",
+        "tricode": "GUA",
+        "teamId": "15018",
+        "nickname": "Long-Lions",
+        "urlName": "long-lions",
+        "teamShortName": "Guangzhou",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Haifa",
+        "altCityName": "Haifa",
+        "fullName": "Haifa Maccabi Haifa",
+        "tricode": "MAC",
+        "teamId": "93",
+        "nickname": "Maccabi Haifa",
+        "urlName": "maccabi_haifa",
+        "teamShortName": "Maccabi Haifa",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Houston",
+        "altCityName": "Houston",
+        "fullName": "Houston Rockets",
+        "tricode": "HOU",
+        "teamId": "1610612745",
+        "nickname": "Rockets",
+        "urlName": "rockets",
+        "teamShortName": "Houston",
+        "confName": "West",
+        "divName": "Southwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Indiana",
+        "altCityName": "Indiana",
+        "fullName": "Indiana Pacers",
+        "tricode": "IND",
+        "teamId": "1610612754",
+        "nickname": "Pacers",
+        "urlName": "pacers",
+        "teamShortName": "Indiana",
+        "confName": "East",
+        "divName": "Central"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "LA",
+        "altCityName": "LA Clippers",
+        "fullName": "LA Clippers",
+        "tricode": "LAC",
+        "teamId": "1610612746",
+        "nickname": "Clippers",
+        "urlName": "clippers",
+        "teamShortName": "LA Clippers",
+        "confName": "West",
+        "divName": "Pacific"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Los Angeles",
+        "altCityName": "Los Angeles Lakers",
+        "fullName": "Los Angeles Lakers",
+        "tricode": "LAL",
+        "teamId": "1610612747",
+        "nickname": "Lakers",
+        "urlName": "lakers",
+        "teamShortName": "L.A. Lakers",
+        "confName": "West",
+        "divName": "Pacific"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Melbourne",
+        "altCityName": "Melbourne",
+        "fullName": "Melbourne United",
+        "tricode": "MEL",
+        "teamId": "15016",
+        "nickname": "United",
+        "urlName": "united",
+        "teamShortName": "Melbourne",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Memphis",
+        "altCityName": "Memphis",
+        "fullName": "Memphis Grizzlies",
+        "tricode": "MEM",
+        "teamId": "1610612763",
+        "nickname": "Grizzlies",
+        "urlName": "grizzlies",
+        "teamShortName": "Memphis",
+        "confName": "West",
+        "divName": "Southwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Miami",
+        "altCityName": "Miami",
+        "fullName": "Miami Heat",
+        "tricode": "MIA",
+        "teamId": "1610612748",
+        "nickname": "Heat",
+        "urlName": "heat",
+        "teamShortName": "Miami",
+        "confName": "East",
+        "divName": "Southeast"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Milwaukee",
+        "altCityName": "Milwaukee",
+        "fullName": "Milwaukee Bucks",
+        "tricode": "MIL",
+        "teamId": "1610612749",
+        "nickname": "Bucks",
+        "urlName": "bucks",
+        "teamShortName": "Milwaukee",
+        "confName": "East",
+        "divName": "Central"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Minnesota",
+        "altCityName": "Minnesota",
+        "fullName": "Minnesota Timberwolves",
+        "tricode": "MIN",
+        "teamId": "1610612750",
+        "nickname": "Timberwolves",
+        "urlName": "timberwolves",
+        "teamShortName": "Minnesota",
+        "confName": "West",
+        "divName": "Northwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "New Orleans",
+        "altCityName": "New Orleans",
+        "fullName": "New Orleans Pelicans",
+        "tricode": "NOP",
+        "teamId": "1610612740",
+        "nickname": "Pelicans",
+        "urlName": "pelicans",
+        "teamShortName": "New Orleans",
+        "confName": "West",
+        "divName": "Southwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "New York",
+        "altCityName": "New York",
+        "fullName": "New York Knicks",
+        "tricode": "NYK",
+        "teamId": "1610612752",
+        "nickname": "Knicks",
+        "urlName": "knicks",
+        "teamShortName": "New York",
+        "confName": "East",
+        "divName": "Atlantic"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "New Zealand",
+        "altCityName": "New Zealand",
+        "fullName": "New Zealand Breakers",
+        "tricode": "NZB",
+        "teamId": "15020",
+        "nickname": "Breakers",
+        "urlName": "breakers",
+        "teamShortName": "New Zealand",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Oklahoma City",
+        "altCityName": "Oklahoma City",
+        "fullName": "Oklahoma City Thunder",
+        "tricode": "OKC",
+        "teamId": "1610612760",
+        "nickname": "Thunder",
+        "urlName": "thunder",
+        "teamShortName": "Oklahoma City",
+        "confName": "West",
+        "divName": "Northwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Orlando",
+        "altCityName": "Orlando",
+        "fullName": "Orlando Magic",
+        "tricode": "ORL",
+        "teamId": "1610612753",
+        "nickname": "Magic",
+        "urlName": "magic",
+        "teamShortName": "Orlando",
+        "confName": "East",
+        "divName": "Southeast"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Philadelphia",
+        "altCityName": "Philadelphia",
+        "fullName": "Philadelphia 76ers",
+        "tricode": "PHI",
+        "teamId": "1610612755",
+        "nickname": "76ers",
+        "urlName": "sixers",
+        "teamShortName": "Philadelphia",
+        "confName": "East",
+        "divName": "Atlantic"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Phoenix",
+        "altCityName": "Phoenix",
+        "fullName": "Phoenix Suns",
+        "tricode": "PHX",
+        "teamId": "1610612756",
+        "nickname": "Suns",
+        "urlName": "suns",
+        "teamShortName": "Phoenix",
+        "confName": "West",
+        "divName": "Pacific"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Portland",
+        "altCityName": "Portland",
+        "fullName": "Portland Trail Blazers",
+        "tricode": "POR",
+        "teamId": "1610612757",
+        "nickname": "Trail Blazers",
+        "urlName": "blazers",
+        "teamShortName": "Portland",
+        "confName": "West",
+        "divName": "Northwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Sacramento",
+        "altCityName": "Sacramento",
+        "fullName": "Sacramento Kings",
+        "tricode": "SAC",
+        "teamId": "1610612758",
+        "nickname": "Kings",
+        "urlName": "kings",
+        "teamShortName": "Sacramento",
+        "confName": "West",
+        "divName": "Pacific"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "San Antonio",
+        "altCityName": "San Antonio",
+        "fullName": "San Antonio Spurs",
+        "tricode": "SAS",
+        "teamId": "1610612759",
+        "nickname": "Spurs",
+        "urlName": "spurs",
+        "teamShortName": "San Antonio",
+        "confName": "West",
+        "divName": "Southwest"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Shanghai",
+        "altCityName": "Shanghai",
+        "fullName": "Shanghai Sharks",
+        "tricode": "SDS",
+        "teamId": "12329",
+        "nickname": "Sharks",
+        "urlName": "shanghai_sharks",
+        "teamShortName": "Shanghai",
+        "confName": "Intl",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": true,
+        "city": "Team Giannis",
+        "altCityName": "Team Giannis",
+        "fullName": "Team Giannis",
+        "tricode": "GNS",
+        "teamId": "1610616833",
+        "nickname": "Team Giannis",
+        "urlName": "team_giannis",
+        "teamShortName": "Team Giannis",
+        "confName": "East",
+        "divName": "East"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": true,
+        "city": "Team LeBron",
+        "altCityName": "Team LeBron",
+        "fullName": "Team LeBron",
+        "tricode": "LBN",
+        "teamId": "1610616834",
+        "nickname": "Team LeBron",
+        "urlName": "team_lebron",
+        "teamShortName": "Team LeBron",
+        "confName": "West",
+        "divName": "West"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Toronto",
+        "altCityName": "Toronto",
+        "fullName": "Toronto Raptors",
+        "tricode": "TOR",
+        "teamId": "1610612761",
+        "nickname": "Raptors",
+        "urlName": "raptors",
+        "teamShortName": "Toronto",
+        "confName": "East",
+        "divName": "Atlantic"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": true,
+        "city": "USA",
+        "altCityName": "USA",
+        "fullName": "USA USA",
+        "tricode": "USA",
+        "teamId": "1610616843",
+        "nickname": "USA",
+        "urlName": "usa",
+        "teamShortName": "USA",
+        "confName": "East",
+        "divName": "East"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Utah",
+        "altCityName": "Utah",
+        "fullName": "Utah Jazz",
+        "tricode": "UTA",
+        "teamId": "1610612762",
+        "nickname": "Jazz",
+        "urlName": "jazz",
+        "teamShortName": "Utah",
+        "confName": "West",
+        "divName": "Northwest"
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Washington",
+        "altCityName": "Washington",
+        "fullName": "Washington Wizards",
+        "tricode": "WAS",
+        "teamId": "1610612764",
+        "nickname": "Wizards",
+        "urlName": "wizards",
+        "teamShortName": "Washington",
+        "confName": "East",
+        "divName": "Southeast"
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": true,
+        "city": "World",
+        "altCityName": "World",
+        "fullName": "World World",
+        "tricode": "WLD",
+        "teamId": "1610616844",
+        "nickname": "World",
+        "urlName": "world",
+        "teamShortName": "World",
+        "confName": "East",
+        "divName": "East"
+      }
+    ],
+    "africa": [
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Team",
+        "altCityName": "Team",
+        "fullName": "Team USA",
+        "tricode": "USA",
+        "teamId": "22",
+        "nickname": "USA",
+        "urlName": "nhs_usa",
+        "teamShortName": "USA",
+        "confName": "",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Team",
+        "altCityName": "Team",
+        "fullName": "Team World",
+        "tricode": "WLD",
+        "teamId": "21",
+        "nickname": "World",
+        "urlName": "nhs_world",
+        "teamShortName": "World",
+        "confName": "",
+        "divName": ""
+      }
+    ],
+    "sacramento": [
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Golden State",
+        "altCityName": "Golden State",
+        "fullName": "Golden State Warriors",
+        "tricode": "GSW",
+        "teamId": "1610612744",
+        "nickname": "Warriors",
+        "urlName": "warriors",
+        "teamShortName": "Golden State",
+        "confName": "Sacramento",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Los Angeles",
+        "altCityName": "Los Angeles Lakers",
+        "fullName": "Los Angeles Lakers",
+        "tricode": "LAL",
+        "teamId": "1610612747",
+        "nickname": "Lakers",
+        "urlName": "lakers",
+        "teamShortName": "L.A. Lakers",
+        "confName": "Sacramento",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Miami",
+        "altCityName": "Miami",
+        "fullName": "Miami Heat",
+        "tricode": "MIA",
+        "teamId": "1610612748",
+        "nickname": "Heat",
+        "urlName": "heat",
+        "teamShortName": "Miami",
+        "confName": "Sacramento",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Sacramento",
+        "altCityName": "Sacramento",
+        "fullName": "Sacramento Kings",
+        "tricode": "SAC",
+        "teamId": "1610612758",
+        "nickname": "Kings",
+        "urlName": "kings",
+        "teamShortName": "Sacramento",
+        "confName": "Sacramento",
+        "divName": ""
+      }
+    ],
+    "vegas": [
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Atlanta",
+        "altCityName": "Atlanta",
+        "fullName": "Atlanta Hawks",
+        "tricode": "ATL",
+        "teamId": "1610612737",
+        "nickname": "Hawks",
+        "urlName": "hawks",
+        "teamShortName": "Atlanta",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Boston",
+        "altCityName": "Boston",
+        "fullName": "Boston Celtics",
+        "tricode": "BOS",
+        "teamId": "1610612738",
+        "nickname": "Celtics",
+        "urlName": "celtics",
+        "teamShortName": "Boston",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Brooklyn",
+        "altCityName": "Brooklyn",
+        "fullName": "Brooklyn Nets",
+        "tricode": "BKN",
+        "teamId": "1610612751",
+        "nickname": "Nets",
+        "urlName": "nets",
+        "teamShortName": "Brooklyn",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Charlotte",
+        "altCityName": "Charlotte",
+        "fullName": "Charlotte Hornets",
+        "tricode": "CHA",
+        "teamId": "1610612766",
+        "nickname": "Hornets",
+        "urlName": "hornets",
+        "teamShortName": "Charlotte",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Chicago",
+        "altCityName": "Chicago",
+        "fullName": "Chicago Bulls",
+        "tricode": "CHI",
+        "teamId": "1610612741",
+        "nickname": "Bulls",
+        "urlName": "bulls",
+        "teamShortName": "Chicago",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "China",
+        "altCityName": "China",
+        "fullName": "Team China",
+        "tricode": "CHN",
+        "teamId": "45",
+        "nickname": "China",
+        "urlName": "china",
+        "teamShortName": "China",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Cleveland",
+        "altCityName": "Cleveland",
+        "fullName": "Cleveland Cavaliers",
+        "tricode": "CLE",
+        "teamId": "1610612739",
+        "nickname": "Cavaliers",
+        "urlName": "cavaliers",
+        "teamShortName": "Cleveland",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": false,
+        "isAllStar": false,
+        "city": "Croatia",
+        "altCityName": "Croatia",
+        "fullName": "Team Croatia",
+        "tricode": "CRO",
+        "teamId": "70",
+        "nickname": "Croatia",
+        "urlName": "croatia",
+        "teamShortName": "Croatia",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Dallas",
+        "altCityName": "Dallas",
+        "fullName": "Dallas Mavericks",
+        "tricode": "DAL",
+        "teamId": "1610612742",
+        "nickname": "Mavericks",
+        "urlName": "mavericks",
+        "teamShortName": "Dallas",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Denver",
+        "altCityName": "Denver",
+        "fullName": "Denver Nuggets",
+        "tricode": "DEN",
+        "teamId": "1610612743",
+        "nickname": "Nuggets",
+        "urlName": "nuggets",
+        "teamShortName": "Denver",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Detroit",
+        "altCityName": "Detroit",
+        "fullName": "Detroit Pistons",
+        "tricode": "DET",
+        "teamId": "1610612765",
+        "nickname": "Pistons",
+        "urlName": "pistons",
+        "teamShortName": "Detroit",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Golden State",
+        "altCityName": "Golden State",
+        "fullName": "Golden State Warriors",
+        "tricode": "GSW",
+        "teamId": "1610612744",
+        "nickname": "Warriors",
+        "urlName": "warriors",
+        "teamShortName": "Golden State",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Houston",
+        "altCityName": "Houston",
+        "fullName": "Houston Rockets",
+        "tricode": "HOU",
+        "teamId": "1610612745",
+        "nickname": "Rockets",
+        "urlName": "rockets",
+        "teamShortName": "Houston",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Indiana",
+        "altCityName": "Indiana",
+        "fullName": "Indiana Pacers",
+        "tricode": "IND",
+        "teamId": "1610612754",
+        "nickname": "Pacers",
+        "urlName": "pacers",
+        "teamShortName": "Indiana",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "LA",
+        "altCityName": "LA Clippers",
+        "fullName": "LA Clippers",
+        "tricode": "LAC",
+        "teamId": "1610612746",
+        "nickname": "Clippers",
+        "urlName": "clippers",
+        "teamShortName": "LA Clippers",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Los Angeles",
+        "altCityName": "Los Angeles Lakers",
+        "fullName": "Los Angeles Lakers",
+        "tricode": "LAL",
+        "teamId": "1610612747",
+        "nickname": "Lakers",
+        "urlName": "lakers",
+        "teamShortName": "L.A. Lakers",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Memphis",
+        "altCityName": "Memphis",
+        "fullName": "Memphis Grizzlies",
+        "tricode": "MEM",
+        "teamId": "1610612763",
+        "nickname": "Grizzlies",
+        "urlName": "grizzlies",
+        "teamShortName": "Memphis",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Miami",
+        "altCityName": "Miami",
+        "fullName": "Miami Heat",
+        "tricode": "MIA",
+        "teamId": "1610612748",
+        "nickname": "Heat",
+        "urlName": "heat",
+        "teamShortName": "Miami",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Milwaukee",
+        "altCityName": "Milwaukee",
+        "fullName": "Milwaukee Bucks",
+        "tricode": "MIL",
+        "teamId": "1610612749",
+        "nickname": "Bucks",
+        "urlName": "bucks",
+        "teamShortName": "Milwaukee",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Minnesota",
+        "altCityName": "Minnesota",
+        "fullName": "Minnesota Timberwolves",
+        "tricode": "MIN",
+        "teamId": "1610612750",
+        "nickname": "Timberwolves",
+        "urlName": "timberwolves",
+        "teamShortName": "Minnesota",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "New Orleans",
+        "altCityName": "New Orleans",
+        "fullName": "New Orleans Pelicans",
+        "tricode": "NOP",
+        "teamId": "1610612740",
+        "nickname": "Pelicans",
+        "urlName": "pelicans",
+        "teamShortName": "New Orleans",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "New York",
+        "altCityName": "New York",
+        "fullName": "New York Knicks",
+        "tricode": "NYK",
+        "teamId": "1610612752",
+        "nickname": "Knicks",
+        "urlName": "knicks",
+        "teamShortName": "New York",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Oklahoma City",
+        "altCityName": "Oklahoma City",
+        "fullName": "Oklahoma City Thunder",
+        "tricode": "OKC",
+        "teamId": "1610612760",
+        "nickname": "Thunder",
+        "urlName": "thunder",
+        "teamShortName": "Oklahoma City",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Orlando",
+        "altCityName": "Orlando",
+        "fullName": "Orlando Magic",
+        "tricode": "ORL",
+        "teamId": "1610612753",
+        "nickname": "Magic",
+        "urlName": "magic",
+        "teamShortName": "Orlando",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Philadelphia",
+        "altCityName": "Philadelphia",
+        "fullName": "Philadelphia 76ers",
+        "tricode": "PHI",
+        "teamId": "1610612755",
+        "nickname": "76ers",
+        "urlName": "sixers",
+        "teamShortName": "Philadelphia",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Phoenix",
+        "altCityName": "Phoenix",
+        "fullName": "Phoenix Suns",
+        "tricode": "PHX",
+        "teamId": "1610612756",
+        "nickname": "Suns",
+        "urlName": "suns",
+        "teamShortName": "Phoenix",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Portland",
+        "altCityName": "Portland",
+        "fullName": "Portland Trail Blazers",
+        "tricode": "POR",
+        "teamId": "1610612757",
+        "nickname": "Trail Blazers",
+        "urlName": "blazers",
+        "teamShortName": "Portland",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Sacramento",
+        "altCityName": "Sacramento",
+        "fullName": "Sacramento Kings",
+        "tricode": "SAC",
+        "teamId": "1610612758",
+        "nickname": "Kings",
+        "urlName": "kings",
+        "teamShortName": "Sacramento",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "San Antonio",
+        "altCityName": "San Antonio",
+        "fullName": "San Antonio Spurs",
+        "tricode": "SAS",
+        "teamId": "1610612759",
+        "nickname": "Spurs",
+        "urlName": "spurs",
+        "teamShortName": "San Antonio",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Toronto",
+        "altCityName": "Toronto",
+        "fullName": "Toronto Raptors",
+        "tricode": "TOR",
+        "teamId": "1610612761",
+        "nickname": "Raptors",
+        "urlName": "raptors",
+        "teamShortName": "Toronto",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Utah",
+        "altCityName": "Utah",
+        "fullName": "Utah Jazz",
+        "tricode": "UTA",
+        "teamId": "1610612762",
+        "nickname": "Jazz",
+        "urlName": "jazz",
+        "teamShortName": "Utah",
+        "confName": "summer",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Washington",
+        "altCityName": "Washington",
+        "fullName": "Washington Wizards",
+        "tricode": "WAS",
+        "teamId": "1610612764",
+        "nickname": "Wizards",
+        "urlName": "wizards",
+        "teamShortName": "Washington",
+        "confName": "summer",
+        "divName": ""
+      }
+    ],
+    "utah": [
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Cleveland",
+        "altCityName": "Cleveland",
+        "fullName": "Cleveland Cavaliers",
+        "tricode": "CLE",
+        "teamId": "1610612739",
+        "nickname": "Cavaliers",
+        "urlName": "cavaliers",
+        "teamShortName": "Cleveland",
+        "confName": "Utah",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Memphis",
+        "altCityName": "Memphis",
+        "fullName": "Memphis Grizzlies",
+        "tricode": "MEM",
+        "teamId": "1610612763",
+        "nickname": "Grizzlies",
+        "urlName": "grizzlies",
+        "teamShortName": "Memphis",
+        "confName": "Utah",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "San Antonio",
+        "altCityName": "San Antonio",
+        "fullName": "San Antonio Spurs",
+        "tricode": "SAS",
+        "teamId": "1610612759",
+        "nickname": "Spurs",
+        "urlName": "spurs",
+        "teamShortName": "San Antonio",
+        "confName": "Utah",
+        "divName": ""
+      },
+      {
+        "isNBAFranchise": true,
+        "isAllStar": false,
+        "city": "Utah",
+        "altCityName": "Utah",
+        "fullName": "Utah Jazz",
+        "tricode": "UTA",
+        "teamId": "1610612762",
+        "nickname": "Jazz",
+        "urlName": "jazz",
+        "teamShortName": "Utah",
+        "confName": "Utah",
+        "divName": ""
+      }
+    ]
+  }
+}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

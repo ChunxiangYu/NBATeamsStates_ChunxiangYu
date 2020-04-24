@@ -1,6 +1,8 @@
 package edu.bsu.cs222.view;
 import edu.bsu.cs222.model.*;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 
@@ -16,6 +18,8 @@ public class ControllerPane extends VBox {
     private String compareTeamStats;
     private String teamName;
     private String gameData;
+    private String matchGameId4;
+    private String teamGameData4 = "No fourth game";
     private List<Object> gameDescription;
     private List<Object> teamGameId;
     private List<Object> compareTeamGameId;
@@ -58,14 +62,13 @@ public class ControllerPane extends VBox {
 
     private VBox createTeamListBox() throws Exception {
         teamListBox.setPromptText("Select a team");
-        teamListBox.setItems(FXCollections.observableList(getTeamList()));
+        teamListBox.setItems(FXCollections.observableList(TeamListParser.getList()));
         teamListBox.valueProperty().addListener((ov, t, t1) -> {
             try {
                 teamStats = String.valueOf(TeamStatsParser.parseRequest(URLCreator.getTeamStats(seasonYear)).addId(TeamStats.getTeamId(t1)).parse());
                 statsLabel.setText(teamStats);
                 teamUrlName = TeamStatsParser.parseRequest(URLCreator.getTeamList()).addId(TeamStats.getTeamId(t1)).parseUrlName();
                 teamGameId = TeamStatsParser.parseRequest(URLCreator.getTeamSchedule(seasonYear,(String)teamUrlName)).addId(TeamStats.getTeamId(t1)).parseGameIdList();
-               // teamGameData = TeamStatsParser.parseRequest(URLCreator.getTeamSchedule(seasonYear,(String)teamUrlName)).addId(TeamStats.getTeamId(t1)).parseGameDataList();
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -76,9 +79,10 @@ public class ControllerPane extends VBox {
 
     private VBox createCompareTeamListBox() throws Exception {
         compareTeamListBox.setPromptText("Select a team");
-        compareTeamListBox.setItems(FXCollections.observableList(getTeamList()));
+        compareTeamListBox.setItems(FXCollections.observableList(TeamListParser.getList()));
         compareTeamListBox.valueProperty().addListener((ov, t, t1) -> {
             try {
+                teamGameData4 = "No fourth game";
                 compareTeamStats = String.valueOf(TeamStatsParser.parseRequest(URLCreator.getTeamStats(seasonYear)).addId(TeamStats.getTeamId(t1)).parse());
                 compareStatsLabel.setText(compareTeamStats);
                 teamName = t1;
@@ -99,80 +103,62 @@ public class ControllerPane extends VBox {
         period.setItems(FXCollections.observableArrayList(
                 "1","2","3","4")
         );
-        getMatchList.setOnAction(actionEvent -> {
-
-            try {
-                matchDescription.setText("");
-                String matchGameId1 = (String) TeamMatches.findMatch(teamGameId,compareTeamGameId).get(0);
-                String matchGameId2 = (String) TeamMatches.findMatch(teamGameId,compareTeamGameId).get(1);
-                String matchGameId3 = (String) TeamMatches.findMatch(teamGameId,compareTeamGameId).get(2);
-                //String matchGameId4 = (String) TeamMatches.findMatch(teamGameId,compareTeamGameId).get(3);
-                String teamGameData1 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName,matchGameId1);
-                String teamGameData2 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName,matchGameId2);
-                String teamGameData3 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName,matchGameId3);
-                idData.put(teamGameData1,matchGameId1);
-                idData.put(teamGameData2,matchGameId2);
-                idData.put(teamGameData3,matchGameId3);
-
-                matchesListBox.setItems(FXCollections.observableArrayList(
-                        teamGameData1,teamGameData2,teamGameData3)
-                );
-                matchesListBox.valueProperty().addListener((ov, t, t1) -> {
-                    try {
-                        gameData = matchesListBox.getValue();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                });
-                period.valueProperty().addListener((ov, t, t1) -> {
-                    try {
-                       // matchDescription.clear();
-                        gameDescription = TeamStatsParser.parseRequest(URLCreator.getDescription(idData.get(gameData),gameData,t1)).addId(TeamStats.getTeamId(teamName)).parseGameDescriptionList();
-                        String[] description = String.valueOf(gameDescription).split(",");
-                        for (String s : description) {
-                            matchDescription.appendText(s + "\n");
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                });
-               } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-
+        getMatchList.setOnAction(this::matchListComboBoxListener);
         return new VBox(getMatchList,matchesListBox,period,matchDescription);
     }
 
+    private void matchListComboBoxListener(ActionEvent actionEvent) {
+        try {
+            matchDescription.setText("");
+            String matchGameId1 = (String) TeamMatches.findMatch(teamGameId, compareTeamGameId).get(0);
+            String matchGameId2 = (String) TeamMatches.findMatch(teamGameId, compareTeamGameId).get(1);
+            String matchGameId3 = (String) TeamMatches.findMatch(teamGameId, compareTeamGameId).get(2);
+            try {
+                String valueExist;
+                valueExist = String.valueOf(TeamMatches.findMatch(teamGameId, compareTeamGameId).get(3));
+                if (valueExist == null || valueExist.length() == 0) {
+                    teamGameData4 = "No fourth game";
+                } else {
+                    matchGameId4 = (String) TeamMatches.findMatch(teamGameId, compareTeamGameId).get(3);
+                    teamGameData4 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName, matchGameId4);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            String teamGameData1 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName, matchGameId1);
+            String teamGameData2 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName, matchGameId2);
+            String teamGameData3 = TeamMatches.getGameData(seasonYear, (String) compareTeamUrlName, matchGameId3);
+            idData.put(teamGameData1, matchGameId1);
+            idData.put(teamGameData2, matchGameId2);
+            idData.put(teamGameData3, matchGameId3);
+            idData.put(teamGameData4, teamGameData4);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private List<String> getTeamList() throws Exception {
-        TeamListParser teamListParser = TeamListParser.getNewListOfTeams();
-        return teamListParser.createFullListOfTeams();
+            matchesListBox.setItems(FXCollections.observableArrayList(
+                    teamGameData1, teamGameData2, teamGameData3, teamGameData4)
+            );
+            matchesListBox.valueProperty().addListener(this::readData);
+            period.valueProperty().addListener((ov, t, t1) -> {
+                try {
+                    gameDescription = TeamStatsParser.parseRequest(URLCreator.getDescription(idData.get(gameData), gameData, t1)).addId(TeamStats.getTeamId(teamName)).parseGameDescriptionList();
+                    String[] description = String.valueOf(gameDescription).split(",");
+                    for (String s : description) {
+                        matchDescription.appendText(s + "\n");
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-
+    private void readData(ObservableValue<? extends String> ov, String t, String t1) {
+        try {
+            gameData = matchesListBox.getValue();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }
